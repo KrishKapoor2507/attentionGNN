@@ -1,0 +1,16 @@
+verification started 2026-10-29 00:11:17
+[PASS] 90 checkpoints: SHA-256 equals the hash stored in metrics.json (mismatches: [])
+[PASS] 18 saved checkpoints (every dataset x GNN variant, seed 0) recompute all scores; max |difference| to saved predictions = 5.27e-05; failures: []
+[PASS] results index: 25 tables and 23 figures, all source runs exist (missing: [])
+[PASS] dataset validation report: 42 checks passed, 0 failed (built 2026-10-28 14:18:12)
+[PASS] local launcher binds the dashboard to localhost only (--server.address localhost)
+[PASS] Weibo data file is the original 868-anomaly version (pinned SHA-256)
+[PASS] PPTX opens with python-pptx: 14 slides (required 14), speaker notes on every slide: True, 5 native charts, 4 native tables
+[PASS] PPTX opens in Microsoft PowerPoint with 14 slides
+[PASS] no placeholder text on slides (found: [])
+checking report PDF: final_report.pdf
+[PASS] report PDF: 32 pages; all 18 required headings present in the required order: True
+[PASS] report has no missing table/figure markers (found: [])
+[PASS] report citations: 32 distinct numbers cited, 32 references listed, unresolved: []
+[PASS] bibliography URL check (40 entries, 7 publisher pages block bots): unresolved []
+placeholders still to edit in metadata.yaml: ['EDIT_ME:']

@@ -1,0 +1,5 @@
+[23:52:26] run weibo__gat_untrained__s0__bench
+[23:52:28] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[23:52:30] model gat_untrained: encoder params=30080 total=62547
+[23:52:46] run complete
+[23:52:46] total wall time 20.2s

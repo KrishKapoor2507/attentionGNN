@@ -1,0 +1,59 @@
+{
+  "run_id": "weibo__iforest_attr_struct__s0__bench",
+  "dataset": "weibo",
+  "variant": "iforest_attr_struct",
+  "seed": 0,
+  "tag": "bench",
+  "status": "complete",
+  "train_seconds": 1.067098617553711,
+  "anomaly": {
+    "iforest": {
+      "threshold": 0.4619490539801966,
+      "val": {
+        "n": 1681,
+        "support_pos": 69,
+        "support_neg": 1612,
+        "threshold": 0.4619490539801966,
+        "k": 69,
+        "one_class": false,
+        "confusion": {
+          "tp": 14,
+          "fp": 42,
+          "fn": 55,
+          "tn": 1570
+        },
+        "precision": 0.25,
+        "recall": 0.2028985507246377,
+        "f1": 0.224,
+        "n_flagged": 56,
+        "roc_auc": 0.5336201316215341,
+        "average_precision": 0.07591744818032398,
+        "precision_at_k": 0.2028985507246377
+      },
+      "test": {
+        "n": 4203,
+        "support_pos": 174,
+        "support_neg": 4029,
+        "threshold": 0.4619490539801966,
+        "k": 174,
+        "one_class": false,
+        "confusion": {
+          "tp": 10,
+          "fp": 84,
+          "fn": 164,
+          "tn": 3945
+        },
+        "precision": 0.10638297872340426,
+        "recall": 0.05747126436781609,
+        "f1": 0.0746268656716418,
+        "n_flagged": 94,
+        "roc_auc": 0.4132432108592018,
+        "average_precision": 0.03831822857888816,
+        "precision_at_k": 0.05747126436781609,
+        "precision_at_50": 0.0
+      }
+    }
+  },
+  "peak_memory_mb": 541.8,
+  "notes": "IsolationForest(200 trees) fitted on all nodes' normalised attributes (unlabelled, transductive) plus log-degree, log mean-neighbour-degree, log PageRank"
+}

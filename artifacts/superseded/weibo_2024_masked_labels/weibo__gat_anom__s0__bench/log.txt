@@ -1,0 +1,9 @@
+[22:46:38] run weibo__gat_anom__s0__bench
+[22:46:40] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:46:43] model gat_anom: encoder params=30080 total=62547
+[22:46:45] epoch    1/60  loss=168.7823 attr=3.7626 struct=333.8021 inf=2.5798
+[22:47:27] epoch   21/60  loss=2.3267 attr=1.0206 struct=3.6328 inf=0.9977
+[22:48:10] epoch   41/60  loss=1.5999 attr=1.0077 struct=2.1922 inf=0.9999
+[22:48:52] epoch   60/60  loss=1.2401 attr=1.0035 struct=1.4767 inf=1.0000
+[22:49:21] run complete
+[22:49:21] total wall time 163.4s

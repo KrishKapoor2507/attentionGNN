@@ -1,0 +1,253 @@
+method,seed,metric,value
+Isolation Forest (attributes),0,ROC-AUC,0.4676817183107891
+Isolation Forest (attributes),1,ROC-AUC,0.4301425771482859
+Isolation Forest (attributes),2,ROC-AUC,0.4748530639842616
+Isolation Forest (attributes),0,AP,0.11967624442510032
+Isolation Forest (attributes),1,AP,0.11764201031455787
+Isolation Forest (attributes),2,AP,0.11509382872535076
+Isolation Forest (attributes),0,F1,0.13996316758747698
+Isolation Forest (attributes),1,F1,0.1883837285185991
+Isolation Forest (attributes),2,F1,0.12811387900355872
+Isolation Forest (attributes),0,Precision,0.3486238532110092
+Isolation Forest (attributes),1,Precision,0.10401153014652895
+Isolation Forest (attributes),2,Precision,0.28125
+Isolation Forest (attributes),0,Recall,0.08755760368663594
+Isolation Forest (attributes),1,Recall,0.9976958525345622
+Isolation Forest (attributes),2,Recall,0.08294930875576037
+Isolation Forest (attributes),0,P@k (k=#pos),0.15207373271889402
+Isolation Forest (attributes),1,P@k (k=#pos),0.14746543778801843
+Isolation Forest (attributes),2,P@k (k=#pos),0.14055299539170507
+Isolation Forest (attributes + structure),0,ROC-AUC,0.46131612120708226
+Isolation Forest (attributes + structure),1,ROC-AUC,0.47205923169000563
+Isolation Forest (attributes + structure),2,ROC-AUC,0.43936711445420007
+Isolation Forest (attributes + structure),0,AP,0.11961444333735574
+Isolation Forest (attributes + structure),1,AP,0.12386056689307437
+Isolation Forest (attributes + structure),2,AP,0.10542079779596943
+Isolation Forest (attributes + structure),0,F1,0.13026819923371646
+Isolation Forest (attributes + structure),1,F1,0.18572418572418573
+Isolation Forest (attributes + structure),2,F1,0.13186813186813187
+Isolation Forest (attributes + structure),0,Precision,0.38636363636363635
+Isolation Forest (attributes + structure),1,Precision,0.10320924261874198
+Isolation Forest (attributes + structure),2,Precision,0.32142857142857145
+Isolation Forest (attributes + structure),0,Recall,0.07834101382488479
+Isolation Forest (attributes + structure),1,Recall,0.9262672811059908
+Isolation Forest (attributes + structure),2,Recall,0.08294930875576037
+Isolation Forest (attributes + structure),0,P@k (k=#pos),0.17050691244239632
+Isolation Forest (attributes + structure),1,P@k (k=#pos),0.15898617511520738
+Isolation Forest (attributes + structure),2,P@k (k=#pos),0.1313364055299539
+GCN reconstruction (DOMINANT-style),0,ROC-AUC,0.8020028781974708
+GCN reconstruction (DOMINANT-style),1,ROC-AUC,0.7794730966788241
+GCN reconstruction (DOMINANT-style),2,ROC-AUC,0.7909626555712195
+GCN reconstruction (DOMINANT-style),0,AP,0.34149621056610957
+GCN reconstruction (DOMINANT-style),1,AP,0.309009352787992
+GCN reconstruction (DOMINANT-style),2,AP,0.30540192578915104
+GCN reconstruction (DOMINANT-style),0,F1,0.3705521472392638
+GCN reconstruction (DOMINANT-style),1,F1,0.35013262599469497
+GCN reconstruction (DOMINANT-style),2,F1,0.3605150214592275
+GCN reconstruction (DOMINANT-style),0,Precision,0.3963254593175853
+GCN reconstruction (DOMINANT-style),1,Precision,0.4125
+GCN reconstruction (DOMINANT-style),2,Precision,0.3373493975903614
+GCN reconstruction (DOMINANT-style),0,Recall,0.347926267281106
+GCN reconstruction (DOMINANT-style),1,Recall,0.30414746543778803
+GCN reconstruction (DOMINANT-style),2,Recall,0.3870967741935484
+GCN reconstruction (DOMINANT-style),0,P@k (k=#pos),0.3824884792626728
+GCN reconstruction (DOMINANT-style),1,P@k (k=#pos),0.37557603686635943
+GCN reconstruction (DOMINANT-style),2,P@k (k=#pos),0.35023041474654376
+GAT reconstruction,0,ROC-AUC,0.7797408644129346
+GAT reconstruction,1,ROC-AUC,0.7418382805154344
+GAT reconstruction,2,ROC-AUC,0.7904387355983142
+GAT reconstruction,0,AP,0.3154672970476946
+GAT reconstruction,1,AP,0.24641032570207733
+GAT reconstruction,2,AP,0.3012353066478289
+GAT reconstruction,0,F1,0.35454545454545455
+GAT reconstruction,1,F1,0.3192488262910798
+GAT reconstruction,2,F1,0.352035203520352
+GAT reconstruction,0,Precision,0.34977578475336324
+GAT reconstruction,1,Precision,0.3253588516746411
+GAT reconstruction,2,Precision,0.3368421052631579
+GAT reconstruction,0,Recall,0.35944700460829493
+GAT reconstruction,1,Recall,0.31336405529953915
+GAT reconstruction,2,Recall,0.3686635944700461
+GAT reconstruction,0,P@k (k=#pos),0.35714285714285715
+GAT reconstruction,1,P@k (k=#pos),0.3248847926267281
+GAT reconstruction,2,P@k (k=#pos),0.35023041474654376
+GATv2 reconstruction,0,ROC-AUC,0.786092094982962
+GATv2 reconstruction,1,ROC-AUC,0.7623053946028295
+GATv2 reconstruction,2,ROC-AUC,0.7698304015415596
+GATv2 reconstruction,0,AP,0.32861906874797575
+GATv2 reconstruction,1,AP,0.2947222234650168
+GATv2 reconstruction,2,AP,0.28989348465770504
+GATv2 reconstruction,0,F1,0.39512195121951216
+GATv2 reconstruction,1,F1,0.3549222797927461
+GATv2 reconstruction,2,F1,0.355276907001045
+GATv2 reconstruction,0,Precision,0.41968911917098445
+GATv2 reconstruction,1,Precision,0.40532544378698226
+GATv2 reconstruction,2,Precision,0.32504780114722753
+GATv2 reconstruction,0,Recall,0.37327188940092165
+GATv2 reconstruction,1,Recall,0.315668202764977
+GATv2 reconstruction,2,Recall,0.391705069124424
+GATv2 reconstruction,0,P@k (k=#pos),0.3847926267281106
+GATv2 reconstruction,1,P@k (k=#pos),0.3548387096774194
+GATv2 reconstruction,2,P@k (k=#pos),0.3433179723502304
+GAT attention-only (weighted feature discrepancy),0,ROC-AUC,0.6249790615413396
+GAT attention-only (weighted feature discrepancy),1,ROC-AUC,0.6473382786814089
+GAT attention-only (weighted feature discrepancy),2,ROC-AUC,0.553790747463237
+GAT attention-only (weighted feature discrepancy),0,AP,0.18570194726916195
+GAT attention-only (weighted feature discrepancy),1,AP,0.34198693897151583
+GAT attention-only (weighted feature discrepancy),2,AP,0.2299520258702033
+GAT attention-only (weighted feature discrepancy),0,F1,0.35561681598897316
+GAT attention-only (weighted feature discrepancy),1,F1,0.3759562841530054
+GAT attention-only (weighted feature discrepancy),2,F1,0.32711306256860595
+GAT attention-only (weighted feature discrepancy),0,Precision,0.2536873156342183
+GAT attention-only (weighted feature discrepancy),1,Precision,0.3575883575883576
+GAT attention-only (weighted feature discrepancy),2,Precision,0.31236897274633124
+GAT attention-only (weighted feature discrepancy),0,Recall,0.5944700460829493
+GAT attention-only (weighted feature discrepancy),1,Recall,0.39631336405529954
+GAT attention-only (weighted feature discrepancy),2,Recall,0.3433179723502304
+GAT attention-only (weighted feature discrepancy),0,P@k (k=#pos),0.18433179723502305
+GAT attention-only (weighted feature discrepancy),1,P@k (k=#pos),0.3640552995391705
+GAT attention-only (weighted feature discrepancy),2,P@k (k=#pos),0.31797235023041476
+GAT combined (reconstruction + attention-only),0,ROC-AUC,0.7096272893224254
+GAT combined (reconstruction + attention-only),1,ROC-AUC,0.7051852793771161
+GAT combined (reconstruction + attention-only),2,ROC-AUC,0.7262368362814275
+GAT combined (reconstruction + attention-only),0,AP,0.28871767610216065
+GAT combined (reconstruction + attention-only),1,AP,0.30352187156905386
+GAT combined (reconstruction + attention-only),2,AP,0.2905277810264652
+GAT combined (reconstruction + attention-only),0,F1,0.36864406779661013
+GAT combined (reconstruction + attention-only),1,F1,0.3949416342412452
+GAT combined (reconstruction + attention-only),2,F1,0.37370242214532867
+GAT combined (reconstruction + attention-only),0,Precision,0.3411764705882353
+GAT combined (reconstruction + attention-only),1,Precision,0.34175084175084175
+GAT combined (reconstruction + attention-only),2,Precision,0.3741339491916859
+GAT combined (reconstruction + attention-only),0,Recall,0.4009216589861751
+GAT combined (reconstruction + attention-only),1,Recall,0.46774193548387094
+GAT combined (reconstruction + attention-only),2,Recall,0.37327188940092165
+GAT combined (reconstruction + attention-only),0,P@k (k=#pos),0.35714285714285715
+GAT combined (reconstruction + attention-only),1,P@k (k=#pos),0.3709677419354839
+GAT combined (reconstruction + attention-only),2,P@k (k=#pos),0.37327188940092165
+"GAT joint, reconstruction score",0,ROC-AUC,0.8229132151324228
+"GAT joint, reconstruction score",1,ROC-AUC,0.722740572191526
+"GAT joint, reconstruction score",2,ROC-AUC,0.7865438766165407
+"GAT joint, reconstruction score",0,AP,0.3571610266019877
+"GAT joint, reconstruction score",1,AP,0.23093437641492745
+"GAT joint, reconstruction score",2,AP,0.299099541656493
+"GAT joint, reconstruction score",0,F1,0.40457142857142864
+"GAT joint, reconstruction score",1,F1,0.31196581196581197
+"GAT joint, reconstruction score",2,F1,0.35138121546961326
+"GAT joint, reconstruction score",0,Precision,0.4013605442176871
+"GAT joint, reconstruction score",1,Precision,0.2908366533864542
+"GAT joint, reconstruction score",2,Precision,0.3375796178343949
+"GAT joint, reconstruction score",0,Recall,0.4078341013824885
+"GAT joint, reconstruction score",1,Recall,0.33640552995391704
+"GAT joint, reconstruction score",2,Recall,0.3663594470046083
+"GAT joint, reconstruction score",0,P@k (k=#pos),0.3986175115207373
+"GAT joint, reconstruction score",1,P@k (k=#pos),0.31105990783410137
+"GAT joint, reconstruction score",2,P@k (k=#pos),0.35023041474654376
+"GAT joint, attention-only score",0,ROC-AUC,0.6401488984231049
+"GAT joint, attention-only score",1,ROC-AUC,0.6521208060420138
+"GAT joint, attention-only score",2,ROC-AUC,0.5483015089139757
+"GAT joint, attention-only score",0,AP,0.19134546331314956
+"GAT joint, attention-only score",1,AP,0.3388615986873691
+"GAT joint, attention-only score",2,AP,0.229727452874454
+"GAT joint, attention-only score",0,F1,0.35592060232717315
+"GAT joint, attention-only score",1,F1,0.3936170212765957
+"GAT joint, attention-only score",2,F1,0.33264033264033266
+"GAT joint, attention-only score",0,Precision,0.25316455696202533
+"GAT joint, attention-only score",1,Precision,0.36561264822134387
+"GAT joint, attention-only score",2,Precision,0.30303030303030304
+"GAT joint, attention-only score",0,Recall,0.5990783410138248
+"GAT joint, attention-only score",1,Recall,0.42626728110599077
+"GAT joint, attention-only score",2,Recall,0.3686635944700461
+"GAT joint, attention-only score",0,P@k (k=#pos),0.20967741935483872
+"GAT joint, attention-only score",1,P@k (k=#pos),0.38018433179723504
+"GAT joint, attention-only score",2,P@k (k=#pos),0.31336405529953915
+"GAT joint, combined score",0,ROC-AUC,0.7721015365466277
+"GAT joint, combined score",1,ROC-AUC,0.688711450310745
+"GAT joint, combined score",2,ROC-AUC,0.7128233845597055
+"GAT joint, combined score",0,AP,0.32128334963110156
+"GAT joint, combined score",1,AP,0.3017532326258196
+"GAT joint, combined score",2,AP,0.2884434371091436
+"GAT joint, combined score",0,F1,0.3761562178828366
+"GAT joint, combined score",1,F1,0.3732162458836443
+"GAT joint, combined score",2,F1,0.3763066202090592
+"GAT joint, combined score",0,Precision,0.3395176252319109
+"GAT joint, combined score",1,Precision,0.35639412997903563
+"GAT joint, combined score",2,Precision,0.3793911007025761
+"GAT joint, combined score",0,Recall,0.4216589861751152
+"GAT joint, combined score",1,Recall,0.391705069124424
+"GAT joint, combined score",2,Recall,0.37327188940092165
+"GAT joint, combined score",0,P@k (k=#pos),0.3709677419354839
+"GAT joint, combined score",1,P@k (k=#pos),0.3663594470046083
+"GAT joint, combined score",2,P@k (k=#pos),0.3778801843317972
+"GCN joint, reconstruction score",0,ROC-AUC,0.8024699433775171
+"GCN joint, reconstruction score",1,ROC-AUC,0.7813474708175964
+"GCN joint, reconstruction score",2,ROC-AUC,0.7901520162665842
+"GCN joint, reconstruction score",0,AP,0.3415950196521676
+"GCN joint, reconstruction score",1,AP,0.31009378153175465
+"GCN joint, reconstruction score",2,AP,0.3045139429566927
+"GCN joint, reconstruction score",0,F1,0.3705521472392638
+"GCN joint, reconstruction score",1,F1,0.35013262599469497
+"GCN joint, reconstruction score",2,F1,0.3613177470775771
+"GCN joint, reconstruction score",0,Precision,0.3963254593175853
+"GCN joint, reconstruction score",1,Precision,0.4125
+"GCN joint, reconstruction score",2,Precision,0.33530571992110453
+"GCN joint, reconstruction score",0,Recall,0.347926267281106
+"GCN joint, reconstruction score",1,Recall,0.30414746543778803
+"GCN joint, reconstruction score",2,Recall,0.391705069124424
+"GCN joint, reconstruction score",0,P@k (k=#pos),0.3824884792626728
+"GCN joint, reconstruction score",1,P@k (k=#pos),0.37557603686635943
+"GCN joint, reconstruction score",2,P@k (k=#pos),0.35023041474654376
+"GATv2 joint, reconstruction score",0,ROC-AUC,0.7767403985704382
+"GATv2 joint, reconstruction score",1,ROC-AUC,0.7733761843220157
+"GATv2 joint, reconstruction score",2,ROC-AUC,0.7319877291462121
+"GATv2 joint, reconstruction score",0,AP,0.2997692661763834
+"GATv2 joint, reconstruction score",1,AP,0.30603827590049226
+"GATv2 joint, reconstruction score",2,AP,0.2571377434855853
+"GATv2 joint, reconstruction score",0,F1,0.34277198211624443
+"GATv2 joint, reconstruction score",1,F1,0.353393085787452
+"GATv2 joint, reconstruction score",2,F1,0.30769230769230776
+"GATv2 joint, reconstruction score",0,Precision,0.48523206751054854
+"GATv2 joint, reconstruction score",1,Precision,0.3976945244956772
+"GATv2 joint, reconstruction score",2,Precision,0.3468208092485549
+"GATv2 joint, reconstruction score",0,Recall,0.26497695852534564
+"GATv2 joint, reconstruction score",1,Recall,0.31797235023041476
+"GATv2 joint, reconstruction score",2,Recall,0.2764976958525346
+"GATv2 joint, reconstruction score",0,P@k (k=#pos),0.32027649769585254
+"GATv2 joint, reconstruction score",1,P@k (k=#pos),0.37327188940092165
+"GATv2 joint, reconstruction score",2,P@k (k=#pos),0.315668202764977
+Control: uniform-neighbour feature deviation (no attention),0,ROC-AUC,0.639609694903732
+Control: uniform-neighbour feature deviation (no attention),1,ROC-AUC,0.6514899012438361
+Control: uniform-neighbour feature deviation (no attention),2,ROC-AUC,0.6001640841548749
+Control: uniform-neighbour feature deviation (no attention),0,AP,0.3444983584014248
+Control: uniform-neighbour feature deviation (no attention),1,AP,0.3665002414545873
+Control: uniform-neighbour feature deviation (no attention),2,AP,0.29264473094573556
+Control: uniform-neighbour feature deviation (no attention),0,F1,0.427860696517413
+Control: uniform-neighbour feature deviation (no attention),1,F1,0.44622425629290613
+Control: uniform-neighbour feature deviation (no attention),2,F1,0.3954214360041623
+Control: uniform-neighbour feature deviation (no attention),0,Precision,0.4648648648648649
+Control: uniform-neighbour feature deviation (no attention),1,Precision,0.4431818181818182
+Control: uniform-neighbour feature deviation (no attention),2,Precision,0.3605313092979127
+Control: uniform-neighbour feature deviation (no attention),0,Recall,0.39631336405529954
+Control: uniform-neighbour feature deviation (no attention),1,Recall,0.44930875576036866
+Control: uniform-neighbour feature deviation (no attention),2,Recall,0.4377880184331797
+Control: uniform-neighbour feature deviation (no attention),0,P@k (k=#pos),0.42626728110599077
+Control: uniform-neighbour feature deviation (no attention),1,P@k (k=#pos),0.4470046082949309
+Control: uniform-neighbour feature deviation (no attention),2,P@k (k=#pos),0.391705069124424
+Control: untrained-GAT attention-only,0,ROC-AUC,0.565083454277131
+Control: untrained-GAT attention-only,1,ROC-AUC,0.6634685336231909
+Control: untrained-GAT attention-only,2,ROC-AUC,0.613140426447627
+Control: untrained-GAT attention-only,0,AP,0.1643194320236403
+Control: untrained-GAT attention-only,1,AP,0.37031639816338796
+Control: untrained-GAT attention-only,2,AP,0.289010920110112
+Control: untrained-GAT attention-only,0,F1,0.26966292134831465
+Control: untrained-GAT attention-only,1,F1,0.4232008592910848
+Control: untrained-GAT attention-only,2,F1,0.3727272727272727
+Control: untrained-GAT attention-only,0,Precision,0.24220183486238533
+Control: untrained-GAT attention-only,1,Precision,0.3963782696177062
+Control: untrained-GAT attention-only,2,Precision,0.5442477876106194
+Control: untrained-GAT attention-only,0,Recall,0.30414746543778803
+Control: untrained-GAT attention-only,1,Recall,0.4539170506912442
+Control: untrained-GAT attention-only,2,Recall,0.2834101382488479
+Control: untrained-GAT attention-only,0,P@k (k=#pos),0.23732718894009217
+Control: untrained-GAT attention-only,1,P@k (k=#pos),0.41013824884792627
+Control: untrained-GAT attention-only,2,P@k (k=#pos),0.32027649769585254

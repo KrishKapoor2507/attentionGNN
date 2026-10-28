@@ -1,0 +1,14 @@
+{
+  "standard (benchmark choice)": {
+    "validation_auc_attr_err": 0.7517485451036923,
+    "train_seconds": 61.894007444381714
+  },
+  "standardise + clip at 5 sd": {
+    "validation_auc_attr_err": 0.6689815344484361,
+    "train_seconds": 65.99800229072571
+  },
+  "standardise + sign-log": {
+    "validation_auc_attr_err": 0.6142522633839019,
+    "train_seconds": 68.452627658844
+  }
+}

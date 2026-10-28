@@ -1,0 +1,64 @@
+section,dataset,check,result,detail
+1 integrity,weibo,local zip equals pinned SHA-256,PASS,"local e3d72d92f01cc674..., pinned e3d72d92f01cc674..."
+1 integrity,weibo,fresh download from pinned commit equals local file,PASS,"13,333,895 bytes, sha256 e3d72d92f01cc674..."
+1 integrity,weibo,upstream history of the file,INFO,2024-01-19 84b7059 'add mask'; 2024-01-19 41fb505 'Remove python-publish.yml'; 2022-06-21 13e75cd 'add unod datasets'
+1 integrity,reddit,local zip equals pinned SHA-256,PASS,"local 276432d36219349b..., pinned 276432d36219349b..."
+1 integrity,reddit,fresh download from pinned commit equals local file,PASS,"2,410,608 bytes, sha256 276432d36219349b..."
+1 integrity,reddit,upstream history of the file,INFO,2022-06-21 13e75cd 'add unod datasets'
+1 integrity,weibo,upstream `main` file vs pinned file: features and edges identical,PASS,True
+1 integrity,weibo,upstream `main` file vs pinned file: anomaly labels,FINDING,pinned (2022): 868 anomalies; upstream main (2024): 347; main anomalies are a subset: True
+1 integrity,weibo,which anomalies does the 2024 file blank?,FINDING,"true anomalies in its train mask kept: 347 of 347; in val mask kept: 0 of 174; in test mask kept: 0 of 347. The 2024 file hides the labels of validation/test nodes, so it cannot be used for evaluation."
+1 integrity,cora,Planetoid raw files equal recorded checksums,PASS,8 files
+2 structure,weibo,features finite (no NaN/inf),PASS,8405 x 400
+2 structure,weibo,"edge ids inside [0, N)",PASS,754542 arcs
+2 structure,weibo,"cleaned graph symmetric, no duplicates, no self-loops",PASS,after clean_edges
+2 structure,weibo,connected components,INFO,"2 components, giant component 100.0% of nodes"
+2 structure,weibo,isolated nodes,INFO,0
+2 structure,weibo,"labels are binary {0,1}",PASS,"[0, 1]"
+2 structure,weibo,class balance,INFO,868 anomalies of 8405 (10.33%)
+2 structure,weibo,source preprocessing,INFO,407963 listed arcs; self-loops removed 0; duplicates removed 0; arcs without reverse 346579 (directed source: True) -> 377271 undirected edges
+3 published,weibo,nodes equal published,PASS,8405 vs 8405
+3 published,weibo,listed edges equal published,PASS,407963 vs 407963
+3 published,weibo,features equal published,PASS,400 vs 400
+3 published,weibo,anomalies equal published,PASS,868 vs 868
+4 label semantics,weibo,"avg clustering coefficient, anomalies vs normal (sampled nodes)",INFO,0.499 vs 0.429
+4 label semantics,weibo,"avg neighbour-feature cosine similarity, anomalies vs normal (sampled nodes)",INFO,0.445 vs 0.052
+4 label semantics,weibo,agreement with BOND's description of Weibo outliers (clustering 0.400 vs 0.301; neighbour similarity 0.004 vs 0.993),PARTIAL,"clustering direction agrees: True; neighbour-similarity direction agrees: False. Our similarity is the mean cosine between a node and its neighbours on the raw features; BOND does not give its exact definition, and our value for normal Weibo users (0.05) is far from their 0.993, so this part of the semantics check is inconclusive"
+6 splits,weibo,"seed 0: disjoint, cover all nodes, both classes in every split, reproducible",PASS,2521(260)/1681(174)/4203(434) nodes (anomalies) train/val/test
+6 splits,weibo,"seed 1: disjoint, cover all nodes, both classes in every split, reproducible",PASS,2521(260)/1681(174)/4203(434) nodes (anomalies) train/val/test
+6 splits,weibo,"seed 2: disjoint, cover all nodes, both classes in every split, reproducible",PASS,2521(260)/1681(174)/4203(434) nodes (anomalies) train/val/test
+2 structure,reddit,features finite (no NaN/inf),PASS,10984 x 64
+2 structure,reddit,"edge ids inside [0, N)",PASS,157032 arcs
+2 structure,reddit,"cleaned graph symmetric, no duplicates, no self-loops",PASS,after clean_edges
+2 structure,reddit,connected components,INFO,"3 components, giant component 100.0% of nodes"
+2 structure,reddit,isolated nodes,INFO,0
+2 structure,reddit,"labels are binary {0,1}",PASS,"[0, 1]"
+2 structure,reddit,class balance,INFO,366 anomalies of 10984 (3.33%)
+2 structure,reddit,source preprocessing,INFO,168016 listed arcs; self-loops removed 10984; duplicates removed 0; arcs without reverse 0 (directed source: False) -> 78516 undirected edges
+3 published,reddit,nodes equal published,PASS,10984 vs 10984
+3 published,reddit,listed edges equal published,PASS,168016 vs 168016
+3 published,reddit,features equal published,PASS,64 vs 64
+3 published,reddit,anomalies equal published,PASS,366 vs 366
+4 label semantics,reddit,"avg clustering coefficient, anomalies vs normal (sampled nodes)",INFO,0.000 vs 0.000
+4 label semantics,reddit,"avg neighbour-feature cosine similarity, anomalies vs normal (sampled nodes)",INFO,0.994 vs 0.995
+4 label semantics,reddit,BOND: Reddit outliers look like inliers in clustering and neighbour similarity,PASS,neighbour similarity 0.994 vs 0.995: the two groups are indistinguishable by this statistic
+6 splits,reddit,"seed 0: disjoint, cover all nodes, both classes in every split, reproducible",PASS,3295(110)/2197(73)/5492(183) nodes (anomalies) train/val/test
+6 splits,reddit,"seed 1: disjoint, cover all nodes, both classes in every split, reproducible",PASS,3295(110)/2197(73)/5492(183) nodes (anomalies) train/val/test
+6 splits,reddit,"seed 2: disjoint, cover all nodes, both classes in every split, reproducible",PASS,3295(110)/2197(73)/5492(183) nodes (anomalies) train/val/test
+2 structure,cora,Planetoid Cora size,PASS,"2708 nodes, 1433 features, 10556 directed arcs (= 5278 undirected; the GCN/GAT papers list 5,429 raw citation records), 7 classes"
+5 injection,cora seed 0,7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic,PASS,"cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+5 injection,cora seed 1,7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic,PASS,"cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+5 injection,cora seed 2,7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic,PASS,"cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+5 injection,cora seed 3,7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic,PASS,"cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+5 injection,cora seed 4,7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic,PASS,"cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+5 injection,cora,label provenance,INFO,labels are SYNTHETIC (DOMINANT-style injection); they must never be described as observed fraud; Cora topic classes are not anomaly labels
+2 structure,cora_injected,features finite (no NaN/inf),PASS,2708 x 1433
+2 structure,cora_injected,"edge ids inside [0, N)",PASS,11186 arcs
+2 structure,cora_injected,"cleaned graph symmetric, no duplicates, no self-loops",PASS,after clean_edges
+2 structure,cora_injected,connected components,INFO,"76 components, giant component 92.8% of nodes"
+2 structure,cora_injected,isolated nodes,INFO,0
+2 structure,cora_injected,"labels are binary {0,1}",PASS,"[0, 1]"
+2 structure,cora_injected,class balance,INFO,140 anomalies of 2708 (5.17%)
+6 splits,cora_injected,"seed 0: disjoint, cover all nodes, both classes in every split, reproducible",PASS,812(42)/542(28)/1354(70) nodes (anomalies) train/val/test
+6 splits,cora_injected,"seed 1: disjoint, cover all nodes, both classes in every split, reproducible",PASS,812(42)/542(28)/1354(70) nodes (anomalies) train/val/test
+6 splits,cora_injected,"seed 2: disjoint, cover all nodes, both classes in every split, reproducible",PASS,812(42)/542(28)/1354(70) nodes (anomalies) train/val/test

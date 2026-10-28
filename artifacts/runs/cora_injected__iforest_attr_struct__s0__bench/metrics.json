@@ -1,0 +1,59 @@
+{
+  "run_id": "cora_injected__iforest_attr_struct__s0__bench",
+  "dataset": "cora_injected",
+  "variant": "iforest_attr_struct",
+  "seed": 0,
+  "tag": "bench",
+  "status": "complete",
+  "train_seconds": 0.6824710369110107,
+  "anomaly": {
+    "iforest": {
+      "threshold": 0.31810982709166047,
+      "val": {
+        "n": 542,
+        "support_pos": 28,
+        "support_neg": 514,
+        "threshold": 0.31810982709166047,
+        "k": 28,
+        "one_class": false,
+        "confusion": {
+          "tp": 25,
+          "fp": 326,
+          "fn": 3,
+          "tn": 188
+        },
+        "precision": 0.07122507122507123,
+        "recall": 0.8928571428571429,
+        "f1": 0.13192612137203166,
+        "n_flagged": 351,
+        "roc_auc": 0.612736242356865,
+        "average_precision": 0.10843153521931786,
+        "precision_at_k": 0.10714285714285714
+      },
+      "test": {
+        "n": 1354,
+        "support_pos": 70,
+        "support_neg": 1284,
+        "threshold": 0.31810982709166047,
+        "k": 70,
+        "one_class": false,
+        "confusion": {
+          "tp": 56,
+          "fp": 874,
+          "fn": 14,
+          "tn": 410
+        },
+        "precision": 0.060215053763440864,
+        "recall": 0.8,
+        "f1": 0.11200000000000002,
+        "n_flagged": 930,
+        "roc_auc": 0.6633845126835781,
+        "average_precision": 0.1532116105328635,
+        "precision_at_k": 0.18571428571428572,
+        "precision_at_50": 0.22
+      }
+    }
+  },
+  "peak_memory_mb": 484.3,
+  "notes": "IsolationForest(200 trees) fitted on all nodes' normalised attributes (unlabelled, transductive) plus log-degree, log mean-neighbour-degree, log PageRank"
+}

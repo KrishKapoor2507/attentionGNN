@@ -1,0 +1,15 @@
+[22:36:08] run cora_injected__gat_joint__s3__bench
+[22:36:08] influence targets loaded from cache targets_cora_injected_989287016bba171e.npz
+[22:36:10] model gat_joint: encoder params=96192 total=195804
+[22:36:10] epoch    1/150  loss=2.1118 attr=1.5262 struct=0.6589 inf=1.0192
+[22:36:13] epoch   21/150  loss=1.0711 attr=0.9582 struct=0.5826 inf=0.3007
+[22:36:16] epoch   41/150  loss=0.8447 attr=0.9154 struct=0.4879 inf=0.1430
+[22:36:18] epoch   61/150  loss=0.7460 attr=0.8994 struct=0.4566 inf=0.0680
+[22:36:21] epoch   81/150  loss=0.7042 attr=0.8911 struct=0.4467 inf=0.0354
+[22:36:24] epoch  101/150  loss=0.6915 attr=0.8863 struct=0.4391 inf=0.0288
+[22:36:26] epoch  121/150  loss=0.6797 attr=0.8829 struct=0.4344 inf=0.0211
+[22:36:29] epoch  141/150  loss=0.6799 attr=0.8807 struct=0.4314 inf=0.0239
+[22:36:31] epoch  150/150  loss=0.6694 attr=0.8798 struct=0.4307 inf=0.0141
+[22:36:48] explanation perturbation done in 11.5s
+[22:36:48] run complete
+[22:36:48] total wall time 40.0s

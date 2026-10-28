@@ -1,0 +1,14 @@
+[22:36:48] run cora_injected__gatv2_joint__s3__bench
+[22:36:48] influence targets loaded from cache targets_cora_injected_989287016bba171e.npz
+[22:36:50] model gatv2_joint: encoder params=192128 total=295900
+[22:36:50] epoch    1/150  loss=2.2085 attr=1.7069 struct=0.6799 inf=1.0151
+[22:36:54] epoch   21/150  loss=1.0479 attr=0.9646 struct=0.5846 inf=0.2733
+[22:36:57] epoch   41/150  loss=0.8252 attr=0.9202 struct=0.4920 inf=0.1191
+[22:37:01] epoch   61/150  loss=0.7250 attr=0.9041 struct=0.4556 inf=0.0452
+[22:37:04] epoch   81/150  loss=0.7040 attr=0.8941 struct=0.4460 inf=0.0339
+[22:37:07] epoch  101/150  loss=0.6785 attr=0.8884 struct=0.4362 inf=0.0162
+[22:37:11] epoch  121/150  loss=0.6735 attr=0.8846 struct=0.4328 inf=0.0147
+[22:37:14] epoch  141/150  loss=0.7006 attr=0.8820 struct=0.4323 inf=0.0434
+[22:37:16] epoch  150/150  loss=0.6837 attr=0.8813 struct=0.4330 inf=0.0265
+[22:37:20] run complete
+[22:37:21] total wall time 32.9s

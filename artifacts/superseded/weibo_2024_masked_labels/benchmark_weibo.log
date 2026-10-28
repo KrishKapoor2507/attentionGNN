@@ -1,0 +1,340 @@
+E:\AttentionGNN\.venv\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+
+=== [1/36] weibo / iforest_attr / seed 0  (elapsed 0s)
+[22:43:26] run weibo__iforest_attr__s0__bench
+[22:43:27] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:43:31] total wall time 5.1s
+
+=== [2/36] weibo / iforest_attr_struct / seed 0  (elapsed 5s)
+[22:43:31] run weibo__iforest_attr_struct__s0__bench
+[22:43:32] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:43:36] total wall time 5.5s
+
+=== [3/36] weibo / centrality / seed 0  (elapsed 11s)
+[22:43:36] run weibo__centrality__s0__bench
+[22:43:38] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:43:41] computing betweenness (200 sampled pivots)
+[22:45:20] total wall time 103.4s
+
+=== [4/36] weibo / gcn_anom / seed 0  (elapsed 114s)
+[22:45:20] run weibo__gcn_anom__s0__bench
+[22:45:22] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:45:25] model gcn_anom: encoder params=29824 total=62163
+[22:45:26] epoch    1/60  loss=0.8192 attr=1.0040 struct=0.6344 inf=1.0150
+[22:45:46] epoch   21/60  loss=0.7342 attr=0.9986 struct=0.4697 inf=1.0007
+[22:46:08] epoch   41/60  loss=0.7304 attr=0.9987 struct=0.4621 inf=1.0003
+[22:46:28] epoch   60/60  loss=0.7291 attr=0.9987 struct=0.4594 inf=1.0000
+[22:46:38] run complete
+[22:46:38] total wall time 77.7s
+
+=== [5/36] weibo / gat_anom / seed 0  (elapsed 192s)
+[22:46:38] run weibo__gat_anom__s0__bench
+[22:46:40] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:46:43] model gat_anom: encoder params=30080 total=62547
+[22:46:45] epoch    1/60  loss=168.7823 attr=3.7626 struct=333.8021 inf=2.5798
+[22:47:27] epoch   21/60  loss=2.3267 attr=1.0206 struct=3.6328 inf=0.9977
+[22:48:10] epoch   41/60  loss=1.5999 attr=1.0077 struct=2.1922 inf=0.9999
+[22:48:52] epoch   60/60  loss=1.2401 attr=1.0035 struct=1.4767 inf=1.0000
+[22:49:21] run complete
+[22:49:21] total wall time 163.4s
+
+=== [6/36] weibo / gatv2_anom / seed 0  (elapsed 355s)
+[22:49:21] run weibo__gatv2_anom__s0__bench
+[22:49:23] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:49:25] model gatv2_anom: encoder params=59904 total=96531
+[22:49:28] epoch    1/60  loss=902.0931 attr=65.7166 struct=1738.4697 inf=7.0378
+[22:50:25] epoch   21/60  loss=1.9528 attr=1.0269 struct=2.8788 inf=1.0017
+[22:51:23] epoch   41/60  loss=1.3891 attr=1.0111 struct=1.7672 inf=0.9998
+[22:52:18] epoch   60/60  loss=1.1368 attr=1.0079 struct=1.2658 inf=1.0000
+[22:52:53] run complete
+[22:52:53] total wall time 211.6s
+
+=== [7/36] weibo / gat_inf / seed 0  (elapsed 567s)
+[22:52:53] run weibo__gat_inf__s0__bench
+[22:52:55] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:52:59] model gat_inf: encoder params=30080 total=62547
+[22:53:00] epoch    1/60  loss=2.5798 attr=3.7626 struct=333.8021 inf=2.5798
+[22:53:41] epoch   21/60  loss=0.6569 attr=1.0023 struct=95.9093 inf=0.6569
+[22:54:23] epoch   41/60  loss=0.5508 attr=1.0001 struct=109.1154 inf=0.5508
+[22:55:03] epoch   60/60  loss=0.4528 attr=1.0000 struct=148.5369 inf=0.4528
+[22:55:38] run complete
+[22:55:38] total wall time 165.6s
+
+=== [8/36] weibo / gcn_joint / seed 0  (elapsed 732s)
+[22:55:38] run weibo__gcn_joint__s0__bench
+[22:55:40] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:55:43] model gcn_joint: encoder params=29824 total=62163
+[22:55:44] epoch    1/60  loss=1.8416 attr=1.0040 struct=0.6091 inf=1.0350
+[22:56:12] epoch   21/60  loss=1.0658 attr=0.9983 struct=0.5031 inf=0.3151
+[22:56:41] epoch   41/60  loss=0.9986 attr=0.9982 struct=0.4803 inf=0.2594
+[22:57:08] epoch   60/60  loss=0.9841 attr=0.9984 struct=0.4727 inf=0.2486
+[22:57:22] run complete
+[22:57:22] total wall time 103.7s
+
+=== [9/36] weibo / gat_joint / seed 0  (elapsed 836s)
+[22:57:22] run weibo__gat_joint__s0__bench
+[22:57:24] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[22:57:26] model gat_joint: encoder params=30080 total=62547
+[22:57:28] epoch    1/60  loss=171.3621 attr=3.7626 struct=333.8021 inf=2.5798
+[22:58:12] epoch   21/60  loss=3.2226 attr=1.0228 struct=3.6329 inf=0.8947
+[22:58:57] epoch   41/60  loss=2.2851 attr=1.0082 struct=2.0035 inf=0.7792
+[22:59:39] epoch   60/60  loss=1.9193 attr=1.0041 struct=1.4141 inf=0.7102
+[23:08:41] explanation perturbation done in 507.9s
+[23:08:41] run complete
+[23:08:42] total wall time 679.6s
+
+=== [10/36] weibo / gatv2_joint / seed 0  (elapsed 1516s)
+[23:08:42] run weibo__gatv2_joint__s0__bench
+[23:48:41] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[23:48:45] model gatv2_joint: encoder params=59904 total=96531
+[23:48:48] epoch    1/60  loss=909.1309 attr=65.7166 struct=1738.4697 inf=7.0378
+[23:49:36] epoch   21/60  loss=2.8780 attr=1.0268 struct=2.8308 inf=0.9492
+[23:50:22] epoch   41/60  loss=2.2502 attr=1.0117 struct=1.8272 inf=0.8307
+[23:50:53] epoch   60/60  loss=1.8952 attr=1.0081 struct=1.3190 inf=0.7316
+[23:51:09] run complete
+[23:51:09] total wall time 2548.0s
+
+=== [11/36] weibo / gat1h_joint / seed 0  (elapsed 4064s)
+[23:51:09] run weibo__gat1h_joint__s0__bench
+[23:51:10] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[23:51:12] model gat1h_joint: encoder params=30080 total=62547
+[23:51:13] epoch    1/60  loss=168.1162 attr=4.0612 struct=328.1986 inf=1.9863
+[23:51:28] epoch   21/60  loss=1.8501 attr=1.0092 struct=0.8865 inf=0.9022
+[23:51:49] epoch   41/60  loss=1.6548 attr=1.0019 struct=0.7694 inf=0.7691
+[23:52:09] epoch   60/60  loss=1.5642 attr=1.0001 struct=0.7200 inf=0.7042
+[23:52:26] run complete
+[23:52:26] total wall time 76.8s
+
+=== [12/36] weibo / gat_untrained / seed 0  (elapsed 4140s)
+[23:52:26] run weibo__gat_untrained__s0__bench
+[23:52:28] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[23:52:30] model gat_untrained: encoder params=30080 total=62547
+[23:52:46] run complete
+[23:52:46] total wall time 20.2s
+
+=== [13/36] weibo / iforest_attr / seed 1  (elapsed 4161s)
+[23:52:46] run weibo__iforest_attr__s1__bench
+[23:53:19] influence targets simulated in 31.4s -> targets_weibo_e53b4f247a77c780.npz
+[23:53:22] total wall time 35.1s
+
+=== [14/36] weibo / iforest_attr_struct / seed 1  (elapsed 4196s)
+[23:53:22] run weibo__iforest_attr_struct__s1__bench
+[23:53:23] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[23:53:25] total wall time 3.7s
+
+=== [15/36] weibo / centrality / seed 1  (elapsed 4199s)
+[23:53:25] run weibo__centrality__s1__bench
+[23:53:27] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[23:53:29] computing betweenness (200 sampled pivots)
+[23:54:34] total wall time 68.4s
+
+=== [16/36] weibo / gcn_anom / seed 1  (elapsed 4268s)
+[23:54:34] run weibo__gcn_anom__s1__bench
+[23:54:35] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[23:54:38] model gcn_anom: encoder params=29824 total=62163
+[23:54:38] epoch    1/60  loss=0.7931 attr=1.0065 struct=0.5797 inf=1.0255
+[23:54:55] epoch   21/60  loss=0.7314 attr=0.9947 struct=0.4680 inf=0.9999
+[23:55:11] epoch   41/60  loss=0.7246 attr=0.9872 struct=0.4621 inf=1.0004
+[23:55:27] epoch   60/60  loss=0.7177 attr=0.9771 struct=0.4583 inf=1.0000
+[23:55:34] run complete
+[23:55:34] total wall time 60.0s
+
+=== [17/36] weibo / gat_anom / seed 1  (elapsed 4328s)
+[23:55:34] run weibo__gat_anom__s1__bench
+[23:55:35] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[23:55:37] model gat_anom: encoder params=30080 total=62547
+[23:55:38] epoch    1/60  loss=395.0621 attr=4.0707 struct=786.0535 inf=3.1120
+[23:56:00] epoch   21/60  loss=1.3817 attr=1.0134 struct=1.7500 inf=1.0019
+[23:56:24] epoch   41/60  loss=1.0740 attr=1.0007 struct=1.1473 inf=1.0000
+[23:56:46] epoch   60/60  loss=0.9761 attr=0.9968 struct=0.9553 inf=1.0000
+[23:57:01] run complete
+[23:57:02] total wall time 87.8s
+
+=== [18/36] weibo / gatv2_anom / seed 1  (elapsed 4416s)
+[23:57:02] run weibo__gatv2_anom__s1__bench
+[23:57:03] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[23:57:05] model gatv2_anom: encoder params=59904 total=96531
+[23:57:06] epoch    1/60  loss=425.1460 attr=8.3211 struct=841.9709 inf=4.3577
+[23:57:40] epoch   21/60  loss=1.7037 attr=1.0122 struct=2.3953 inf=0.9989
+[23:58:27] epoch   41/60  loss=1.2174 attr=1.0038 struct=1.4311 inf=0.9999
+[23:59:22] epoch   60/60  loss=1.0174 attr=0.9999 struct=1.0349 inf=1.0000
+[23:59:57] run complete
+[23:59:57] total wall time 175.6s
+
+=== [19/36] weibo / gat_inf / seed 1  (elapsed 4591s)
+[23:59:57] run weibo__gat_inf__s1__bench
+[00:00:00] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[00:00:02] model gat_inf: encoder params=30080 total=62547
+[00:00:04] epoch    1/60  loss=3.1120 attr=4.0707 struct=786.0535 inf=3.1120
+[00:00:45] epoch   21/60  loss=0.6640 attr=1.0273 struct=574.6082 inf=0.6640
+[00:01:23] epoch   41/60  loss=0.5555 attr=1.0006 struct=632.6811 inf=0.5555
+[00:01:58] epoch   60/60  loss=0.5086 attr=1.0000 struct=714.0178 inf=0.5086
+[00:02:31] run complete
+[00:02:31] total wall time 153.7s
+
+=== [20/36] weibo / gcn_joint / seed 1  (elapsed 4745s)
+[00:02:31] run weibo__gcn_joint__s1__bench
+[00:02:33] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[00:02:36] model gcn_joint: encoder params=29824 total=62163
+[00:02:37] epoch    1/60  loss=1.7795 attr=1.0067 struct=0.5751 inf=0.9886
+[00:03:02] epoch   21/60  loss=1.0425 attr=0.9920 struct=0.5037 inf=0.2947
+[00:03:31] epoch   41/60  loss=0.9890 attr=0.9860 struct=0.4780 inf=0.2570
+[00:03:58] epoch   60/60  loss=0.9735 attr=0.9767 struct=0.4694 inf=0.2504
+[00:04:14] run complete
+[00:04:14] total wall time 103.0s
+
+=== [21/36] weibo / gat_joint / seed 1  (elapsed 4848s)
+[00:04:14] run weibo__gat_joint__s1__bench
+[00:04:16] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[00:04:19] model gat_joint: encoder params=30080 total=62547
+[00:04:21] epoch    1/60  loss=398.1740 attr=4.0707 struct=786.0535 inf=3.1120
+[00:04:59] epoch   21/60  loss=2.2545 attr=1.0131 struct=1.7051 inf=0.8954
+[00:05:39] epoch   41/60  loss=1.8213 attr=1.0010 struct=1.1645 inf=0.7385
+[00:06:17] epoch   60/60  loss=1.6335 attr=0.9968 struct=0.9710 inf=0.6496
+[00:13:01] explanation perturbation done in 369.2s
+[00:13:01] run complete
+[00:13:01] total wall time 527.3s
+
+=== [22/36] weibo / gatv2_joint / seed 1  (elapsed 5375s)
+[00:13:01] run weibo__gatv2_joint__s1__bench
+[00:13:04] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[00:13:07] model gatv2_joint: encoder params=59904 total=96531
+[00:13:09] epoch    1/60  loss=429.5037 attr=8.3211 struct=841.9709 inf=4.3577
+[00:14:03] epoch   21/60  loss=2.6618 attr=1.0121 struct=2.3984 inf=0.9565
+[00:14:55] epoch   41/60  loss=2.0760 attr=1.0039 struct=1.4962 inf=0.8259
+[00:15:46] epoch   60/60  loss=1.7413 attr=1.0000 struct=1.0875 inf=0.6976
+[00:16:17] run complete
+[00:16:17] total wall time 195.7s
+
+=== [23/36] weibo / gat1h_joint / seed 1  (elapsed 5571s)
+[00:16:17] run weibo__gat1h_joint__s1__bench
+[00:16:18] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[00:16:21] model gat1h_joint: encoder params=30080 total=62547
+[00:16:22] epoch    1/60  loss=354.3272 attr=2.3710 struct=702.2814 inf=2.0010
+[00:16:39] epoch   21/60  loss=1.9447 attr=1.0067 struct=0.9897 inf=0.9465
+[00:16:55] epoch   41/60  loss=1.7351 attr=0.9987 struct=0.8646 inf=0.8034
+[00:17:20] epoch   60/60  loss=1.6173 attr=0.9950 struct=0.7975 inf=0.7210
+[00:17:45] run complete
+[00:17:45] total wall time 88.5s
+
+=== [24/36] weibo / gat_untrained / seed 1  (elapsed 5660s)
+[00:17:45] run weibo__gat_untrained__s1__bench
+[00:17:47] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[00:17:50] model gat_untrained: encoder params=30080 total=62547
+[00:18:19] run complete
+[00:18:20] total wall time 34.1s
+
+=== [25/36] weibo / iforest_attr / seed 2  (elapsed 5694s)
+[00:18:20] run weibo__iforest_attr__s2__bench
+[00:19:19] influence targets simulated in 57.2s -> targets_weibo_d5bb846b95aae2ec.npz
+[00:19:25] total wall time 65.2s
+
+=== [26/36] weibo / iforest_attr_struct / seed 2  (elapsed 5759s)
+[00:19:25] run weibo__iforest_attr_struct__s2__bench
+[00:19:27] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:19:33] total wall time 8.5s
+
+=== [27/36] weibo / centrality / seed 2  (elapsed 5767s)
+[00:19:33] run weibo__centrality__s2__bench
+[00:19:36] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:19:40] computing betweenness (200 sampled pivots)
+[00:20:53] total wall time 79.2s
+
+=== [28/36] weibo / gcn_anom / seed 2  (elapsed 5847s)
+[00:20:53] run weibo__gcn_anom__s2__bench
+[00:20:54] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:20:56] model gcn_anom: encoder params=29824 total=62163
+[00:20:57] epoch    1/60  loss=0.8076 attr=1.0034 struct=0.6118 inf=0.9909
+[00:21:09] epoch   21/60  loss=0.7340 attr=0.9984 struct=0.4696 inf=0.9990
+[00:21:22] epoch   41/60  loss=0.7282 attr=0.9982 struct=0.4582 inf=1.0000
+[00:21:33] epoch   60/60  loss=0.7279 attr=0.9983 struct=0.4576 inf=1.0000
+[00:21:38] run complete
+[00:21:38] total wall time 45.8s
+
+=== [29/36] weibo / gat_anom / seed 2  (elapsed 5892s)
+[00:21:38] run weibo__gat_anom__s2__bench
+[00:21:39] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:21:42] model gat_anom: encoder params=30080 total=62547
+[00:21:43] epoch    1/60  loss=427.3468 attr=8.0991 struct=846.5945 inf=4.2987
+[00:22:01] epoch   21/60  loss=3.4667 attr=1.0106 struct=5.9227 inf=1.0032
+[00:22:18] epoch   41/60  loss=2.3243 attr=1.0025 struct=3.6462 inf=0.9994
+[00:22:35] epoch   60/60  loss=1.8382 attr=1.0004 struct=2.6761 inf=1.0000
+[00:22:48] run complete
+[00:22:48] total wall time 69.6s
+
+=== [30/36] weibo / gatv2_anom / seed 2  (elapsed 5962s)
+[00:22:48] run weibo__gatv2_anom__s2__bench
+[00:22:49] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:22:51] model gatv2_anom: encoder params=59904 total=96531
+[00:22:52] epoch    1/60  loss=688.1254 attr=22.2492 struct=1354.0017 inf=4.3222
+[00:23:20] epoch   21/60  loss=1.5689 attr=1.0120 struct=2.1257 inf=1.0009
+[00:23:56] epoch   41/60  loss=1.1308 attr=1.0034 struct=1.2581 inf=1.0003
+[00:24:33] epoch   60/60  loss=1.0445 attr=1.0014 struct=1.0877 inf=1.0001
+[00:24:55] run complete
+[00:24:55] total wall time 126.9s
+
+=== [31/36] weibo / gat_inf / seed 2  (elapsed 6089s)
+[00:24:55] run weibo__gat_inf__s2__bench
+[00:24:56] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:24:58] model gat_inf: encoder params=30080 total=62547
+[00:24:59] epoch    1/60  loss=4.2987 attr=8.0991 struct=846.5945 inf=4.2987
+[00:25:25] epoch   21/60  loss=0.6761 attr=1.0073 struct=387.1482 inf=0.6761
+[00:25:51] epoch   41/60  loss=0.6203 attr=1.0002 struct=318.7855 inf=0.6203
+[00:26:15] epoch   60/60  loss=0.5728 attr=1.0000 struct=398.2512 inf=0.5728
+[00:26:36] run complete
+[00:26:36] total wall time 100.9s
+
+=== [32/36] weibo / gcn_joint / seed 2  (elapsed 6190s)
+[00:26:36] run weibo__gcn_joint__s2__bench
+[00:26:37] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:26:39] model gcn_joint: encoder params=29824 total=62163
+[00:26:40] epoch    1/60  loss=1.8163 attr=1.0032 struct=0.6005 inf=1.0144
+[00:26:57] epoch   21/60  loss=1.0576 attr=0.9976 struct=0.5103 inf=0.3036
+[00:27:14] epoch   41/60  loss=0.9972 attr=0.9972 struct=0.4763 inf=0.2604
+[00:27:31] epoch   60/60  loss=0.9862 attr=0.9974 struct=0.4717 inf=0.2517
+[00:27:41] run complete
+[00:27:41] total wall time 65.5s
+
+=== [33/36] weibo / gat_joint / seed 2  (elapsed 6255s)
+[00:27:41] run weibo__gat_joint__s2__bench
+[00:27:43] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:27:44] model gat_joint: encoder params=30080 total=62547
+[00:27:46] epoch    1/60  loss=431.6455 attr=8.0991 struct=846.5945 inf=4.2987
+[00:28:11] epoch   21/60  loss=4.3935 attr=1.0106 struct=6.0364 inf=0.8700
+[00:28:38] epoch   41/60  loss=3.1485 attr=1.0028 struct=3.7254 inf=0.7844
+[00:29:06] epoch   60/60  loss=2.5892 attr=1.0005 struct=2.7678 inf=0.7051
+[00:34:16] explanation perturbation done in 287.8s
+[00:34:16] run complete
+[00:34:16] total wall time 394.6s
+
+=== [34/36] weibo / gatv2_joint / seed 2  (elapsed 6650s)
+[00:34:16] run weibo__gatv2_joint__s2__bench
+[00:34:17] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:34:19] model gatv2_joint: encoder params=59904 total=96531
+[00:34:21] epoch    1/60  loss=692.4476 attr=22.2492 struct=1354.0017 inf=4.3222
+[00:35:00] epoch   21/60  loss=2.4868 attr=1.0121 struct=2.0943 inf=0.9336
+[00:35:35] epoch   41/60  loss=1.9590 attr=1.0036 struct=1.2818 inf=0.8163
+[00:36:11] epoch   60/60  loss=1.8000 attr=1.0014 struct=1.1234 inf=0.7376
+[00:36:34] run complete
+[00:36:34] total wall time 137.8s
+
+=== [35/36] weibo / gat1h_joint / seed 2  (elapsed 6788s)
+[00:36:34] run weibo__gat1h_joint__s2__bench
+[00:36:35] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:36:37] model gat1h_joint: encoder params=30080 total=62547
+[00:36:37] epoch    1/60  loss=35.9225 attr=1.2271 struct=68.5262 inf=1.0458
+[00:36:58] epoch   21/60  loss=1.6075 attr=0.9988 struct=0.7341 inf=0.7410
+[00:37:19] epoch   41/60  loss=1.5071 attr=0.9969 struct=0.6640 inf=0.6767
+[00:37:38] epoch   60/60  loss=1.4655 attr=0.9964 struct=0.6238 inf=0.6554
+[00:37:56] run complete
+[00:37:56] total wall time 82.4s
+
+=== [36/36] weibo / gat_untrained / seed 2  (elapsed 6870s)
+[00:37:56] run weibo__gat_untrained__s2__bench
+[00:37:57] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:37:59] model gat_untrained: encoder params=30080 total=62547
+[00:38:16] run complete
+[00:38:16] total wall time 19.9s
+
+benchmark finished in 6890s; failures: 0

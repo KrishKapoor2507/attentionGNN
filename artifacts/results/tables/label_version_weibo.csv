@@ -1,0 +1,7 @@
+method,"ROC-AUC, authentic labels (868 anomalies)","AP, authentic labels (868 anomalies)","ROC-AUC, corrupted 2024 labels (347 labelled)","AP, corrupted 2024 labels (347 labelled)"
+Isolation Forest (attributes),0.458 ± 0.024 [n=3],0.117 ± 0.002 [n=3],0.427 ± 0.017 [n=3],0.041 ± 0.003 [n=3]
+GCN reconstruction,0.791 ± 0.011 [n=3],0.319 ± 0.020 [n=3],0.750 ± 0.016 [n=3],0.112 ± 0.006 [n=3]
+GAT reconstruction,0.771 ± 0.026 [n=3],0.288 ± 0.036 [n=3],0.722 ± 0.050 [n=3],0.101 ± 0.017 [n=3]
+GAT attention-only,0.609 ± 0.049 [n=3],0.253 ± 0.081 [n=3],0.593 ± 0.082 [n=3],0.105 ± 0.050 [n=3]
+GAT combined,0.714 ± 0.011 [n=3],0.294 ± 0.008 [n=3],0.673 ± 0.024 [n=3],0.113 ± 0.014 [n=3]
+Uniform-neighbour control,0.630 ± 0.027 [n=3],0.335 ± 0.038 [n=3],0.615 ± 0.051 [n=3],0.117 ± 0.034 [n=3]

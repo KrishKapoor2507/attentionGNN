@@ -1,0 +1,4 @@
+variant,seed,train seconds,anomaly-score inference seconds,"peak working set, MB (isolated process)",total params
+gat_joint,0,51.8,4.02,1222.1,62547
+gatv2_joint,0,81.5,5.63,1525.1,96531
+gcn_joint,0,36.0,2.22,1062.6,62163

@@ -1,0 +1,80 @@
+{
+  "summary": {
+    "name": "cora_injected",
+    "nodes": 2708,
+    "undirected_edges": 5413,
+    "directed_arcs": 10826,
+    "features": 1433,
+    "isolated_nodes": 0,
+    "mean_degree": 3.997784342688331,
+    "max_degree": 168,
+    "median_degree": 3.0,
+    "missing_values": 0,
+    "feature_min": 0.0,
+    "feature_max": 1.0,
+    "direction": "symmetrised (undirected) for modelling",
+    "self_loops_after_cleaning": 0,
+    "anomalies": 60,
+    "anomaly_rate": 0.022156573116691284,
+    "label_provenance": "INJECTED anomalies (synthetic, DOMINANT-style protocol); NOT observed fraud. 1 = contextual, 2 = structural.",
+    "contextual": 30,
+    "structural": 30,
+    "meta": {
+      "source": "Planetoid Cora (McCallum et al. 2000; Yang et al. 2016) via torch_geometric",
+      "url": "https://github.com/kimiyoung/planetoid",
+      "label_meaning": "INJECTED anomalies (synthetic, DOMINANT-style protocol); NOT observed fraud. 1 = contextual, 2 = structural.",
+      "organic": false,
+      "injected": true,
+      "injection_seed": 2,
+      "preprocessing_clean_graph": {
+        "edges_in": 10556,
+        "self_loops_removed": 0,
+        "duplicate_arcs_removed": 0,
+        "arcs_without_reverse_before_symmetrise": 0,
+        "directed_in_source": false,
+        "edges_out_directed_arcs": 10556,
+        "undirected_edges": 5278
+      },
+      "preprocessing_after_injection": {
+        "edges_in": 10826,
+        "self_loops_removed": 0,
+        "duplicate_arcs_removed": 0,
+        "arcs_without_reverse_before_symmetrise": 0,
+        "directed_in_source": false,
+        "edges_out_directed_arcs": 10826,
+        "undirected_edges": 5413
+      },
+      "raw_node_count": 2708,
+      "raw_feature_dim": 1433,
+      "topic_classes": 7
+    },
+    "injection": {
+      "protocol": "DOMINANT-style (Ding et al., SDM 2019)",
+      "seed": 2,
+      "struct_cliques": 3,
+      "clique_size": 10,
+      "n_contextual": 30,
+      "k_candidates": 50,
+      "n_structural_nodes": 30,
+      "n_contextual_nodes": 30,
+      "injection_rate": 0.022156573116691284,
+      "edges_added_undirected": 135
+    }
+  },
+  "split_sha256": "c75f08a8904b56be600c488252a1f0eddc0745263023e3c0337289dc39cb88d6",
+  "split_sizes": {
+    "train": 812,
+    "val": 542,
+    "test": 1354
+  },
+  "split_anomalies": {
+    "train": 18,
+    "val": 12,
+    "test": 30
+  },
+  "edge_index_sha256": "2588f9ac9e1f10297ca937c8b668d38493cd9d0e834537cfbb36b593b04e8a98",
+  "features_sha256": "9d281ec2b5243853a13da263bb75456324e468db974efa2207515cb7cca06bbd",
+  "labels_sha256": "045e4e4660bf4ff5b2b1e243cc6a24d522fc8fcd58a34b9e5d618e9e001d8ef0",
+  "influence_target_cache": "targets_cora_injected_7cdd445fa37a6e78.npz",
+  "transductive_note": "encoder sees all nodes' features and all edges; no val/test labels"
+}

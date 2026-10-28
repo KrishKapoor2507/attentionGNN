@@ -1,0 +1,464 @@
+{
+  "built": "2026-10-28 14:18:12",
+  "rows": [
+    {
+      "section": "1 integrity",
+      "dataset": "weibo",
+      "check": "local zip equals pinned SHA-256",
+      "result": "PASS",
+      "detail": "local e3d72d92f01cc674..., pinned e3d72d92f01cc674..."
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "weibo",
+      "check": "fresh download from pinned commit equals local file",
+      "result": "PASS",
+      "detail": "13,333,895 bytes, sha256 e3d72d92f01cc674..."
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "weibo",
+      "check": "upstream history of the file",
+      "result": "INFO",
+      "detail": "2024-01-19 84b7059 'add mask'; 2024-01-19 41fb505 'Remove python-publish.yml'; 2022-06-21 13e75cd 'add unod datasets'"
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "reddit",
+      "check": "local zip equals pinned SHA-256",
+      "result": "PASS",
+      "detail": "local 276432d36219349b..., pinned 276432d36219349b..."
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "reddit",
+      "check": "fresh download from pinned commit equals local file",
+      "result": "PASS",
+      "detail": "2,410,608 bytes, sha256 276432d36219349b..."
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "reddit",
+      "check": "upstream history of the file",
+      "result": "INFO",
+      "detail": "2022-06-21 13e75cd 'add unod datasets'"
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "weibo",
+      "check": "upstream `main` file vs pinned file: features and edges identical",
+      "result": "PASS",
+      "detail": "True"
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "weibo",
+      "check": "upstream `main` file vs pinned file: anomaly labels",
+      "result": "FINDING",
+      "detail": "pinned (2022): 868 anomalies; upstream main (2024): 347; main anomalies are a subset: True"
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "weibo",
+      "check": "which anomalies does the 2024 file blank?",
+      "result": "FINDING",
+      "detail": "true anomalies in its train mask kept: 347 of 347; in val mask kept: 0 of 174; in test mask kept: 0 of 347. The 2024 file hides the labels of validation/test nodes, so it cannot be used for evaluation."
+    },
+    {
+      "section": "1 integrity",
+      "dataset": "cora",
+      "check": "Planetoid raw files equal recorded checksums",
+      "result": "PASS",
+      "detail": "8 files"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "features finite (no NaN/inf)",
+      "result": "PASS",
+      "detail": "8405 x 400"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "edge ids inside [0, N)",
+      "result": "PASS",
+      "detail": "754542 arcs"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "cleaned graph symmetric, no duplicates, no self-loops",
+      "result": "PASS",
+      "detail": "after clean_edges"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "connected components",
+      "result": "INFO",
+      "detail": "2 components, giant component 100.0% of nodes"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "isolated nodes",
+      "result": "INFO",
+      "detail": "0"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "labels are binary {0,1}",
+      "result": "PASS",
+      "detail": "[0, 1]"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "class balance",
+      "result": "INFO",
+      "detail": "868 anomalies of 8405 (10.33%)"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "weibo",
+      "check": "source preprocessing",
+      "result": "INFO",
+      "detail": "407963 listed arcs; self-loops removed 0; duplicates removed 0; arcs without reverse 346579 (directed source: True) -> 377271 undirected edges"
+    },
+    {
+      "section": "3 published",
+      "dataset": "weibo",
+      "check": "nodes equal published",
+      "result": "PASS",
+      "detail": "8405 vs 8405"
+    },
+    {
+      "section": "3 published",
+      "dataset": "weibo",
+      "check": "listed edges equal published",
+      "result": "PASS",
+      "detail": "407963 vs 407963"
+    },
+    {
+      "section": "3 published",
+      "dataset": "weibo",
+      "check": "features equal published",
+      "result": "PASS",
+      "detail": "400 vs 400"
+    },
+    {
+      "section": "3 published",
+      "dataset": "weibo",
+      "check": "anomalies equal published",
+      "result": "PASS",
+      "detail": "868 vs 868"
+    },
+    {
+      "section": "4 label semantics",
+      "dataset": "weibo",
+      "check": "avg clustering coefficient, anomalies vs normal (sampled nodes)",
+      "result": "INFO",
+      "detail": "0.499 vs 0.429"
+    },
+    {
+      "section": "4 label semantics",
+      "dataset": "weibo",
+      "check": "avg neighbour-feature cosine similarity, anomalies vs normal (sampled nodes)",
+      "result": "INFO",
+      "detail": "0.445 vs 0.052"
+    },
+    {
+      "section": "4 label semantics",
+      "dataset": "weibo",
+      "check": "agreement with BOND's description of Weibo outliers (clustering 0.400 vs 0.301; neighbour similarity 0.004 vs 0.993)",
+      "result": "PARTIAL",
+      "detail": "clustering direction agrees: True; neighbour-similarity direction agrees: False. Our similarity is the mean cosine between a node and its neighbours on the raw features; BOND does not give its exact definition, and our value for normal Weibo users (0.05) is far from their 0.993, so this part of the semantics check is inconclusive"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "weibo",
+      "check": "seed 0: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "2521(260)/1681(174)/4203(434) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "weibo",
+      "check": "seed 1: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "2521(260)/1681(174)/4203(434) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "weibo",
+      "check": "seed 2: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "2521(260)/1681(174)/4203(434) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "features finite (no NaN/inf)",
+      "result": "PASS",
+      "detail": "10984 x 64"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "edge ids inside [0, N)",
+      "result": "PASS",
+      "detail": "157032 arcs"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "cleaned graph symmetric, no duplicates, no self-loops",
+      "result": "PASS",
+      "detail": "after clean_edges"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "connected components",
+      "result": "INFO",
+      "detail": "3 components, giant component 100.0% of nodes"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "isolated nodes",
+      "result": "INFO",
+      "detail": "0"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "labels are binary {0,1}",
+      "result": "PASS",
+      "detail": "[0, 1]"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "class balance",
+      "result": "INFO",
+      "detail": "366 anomalies of 10984 (3.33%)"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "reddit",
+      "check": "source preprocessing",
+      "result": "INFO",
+      "detail": "168016 listed arcs; self-loops removed 10984; duplicates removed 0; arcs without reverse 0 (directed source: False) -> 78516 undirected edges"
+    },
+    {
+      "section": "3 published",
+      "dataset": "reddit",
+      "check": "nodes equal published",
+      "result": "PASS",
+      "detail": "10984 vs 10984"
+    },
+    {
+      "section": "3 published",
+      "dataset": "reddit",
+      "check": "listed edges equal published",
+      "result": "PASS",
+      "detail": "168016 vs 168016"
+    },
+    {
+      "section": "3 published",
+      "dataset": "reddit",
+      "check": "features equal published",
+      "result": "PASS",
+      "detail": "64 vs 64"
+    },
+    {
+      "section": "3 published",
+      "dataset": "reddit",
+      "check": "anomalies equal published",
+      "result": "PASS",
+      "detail": "366 vs 366"
+    },
+    {
+      "section": "4 label semantics",
+      "dataset": "reddit",
+      "check": "avg clustering coefficient, anomalies vs normal (sampled nodes)",
+      "result": "INFO",
+      "detail": "0.000 vs 0.000"
+    },
+    {
+      "section": "4 label semantics",
+      "dataset": "reddit",
+      "check": "avg neighbour-feature cosine similarity, anomalies vs normal (sampled nodes)",
+      "result": "INFO",
+      "detail": "0.994 vs 0.995"
+    },
+    {
+      "section": "4 label semantics",
+      "dataset": "reddit",
+      "check": "BOND: Reddit outliers look like inliers in clustering and neighbour similarity",
+      "result": "PASS",
+      "detail": "neighbour similarity 0.994 vs 0.995: the two groups are indistinguishable by this statistic"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "reddit",
+      "check": "seed 0: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "3295(110)/2197(73)/5492(183) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "reddit",
+      "check": "seed 1: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "3295(110)/2197(73)/5492(183) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "reddit",
+      "check": "seed 2: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "3295(110)/2197(73)/5492(183) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora",
+      "check": "Planetoid Cora size",
+      "result": "PASS",
+      "detail": "2708 nodes, 1433 features, 10556 directed arcs (= 5278 undirected; the GCN/GAT papers list 5,429 raw citation records), 7 classes"
+    },
+    {
+      "section": "5 injection",
+      "dataset": "cora seed 0",
+      "check": "7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic",
+      "result": "PASS",
+      "detail": "cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+    },
+    {
+      "section": "5 injection",
+      "dataset": "cora seed 1",
+      "check": "7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic",
+      "result": "PASS",
+      "detail": "cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+    },
+    {
+      "section": "5 injection",
+      "dataset": "cora seed 2",
+      "check": "7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic",
+      "result": "PASS",
+      "detail": "cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+    },
+    {
+      "section": "5 injection",
+      "dataset": "cora seed 3",
+      "check": "7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic",
+      "result": "PASS",
+      "detail": "cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+    },
+    {
+      "section": "5 injection",
+      "dataset": "cora seed 4",
+      "check": "7 complete 10-cliques; 70 contextual nodes with copied attributes; others untouched; deterministic",
+      "result": "PASS",
+      "detail": "cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+    },
+    {
+      "section": "5 injection",
+      "dataset": "cora",
+      "check": "label provenance",
+      "result": "INFO",
+      "detail": "labels are SYNTHETIC (DOMINANT-style injection); they must never be described as observed fraud; Cora topic classes are not anomaly labels"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora_injected",
+      "check": "features finite (no NaN/inf)",
+      "result": "PASS",
+      "detail": "2708 x 1433"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora_injected",
+      "check": "edge ids inside [0, N)",
+      "result": "PASS",
+      "detail": "11186 arcs"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora_injected",
+      "check": "cleaned graph symmetric, no duplicates, no self-loops",
+      "result": "PASS",
+      "detail": "after clean_edges"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora_injected",
+      "check": "connected components",
+      "result": "INFO",
+      "detail": "76 components, giant component 92.8% of nodes"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora_injected",
+      "check": "isolated nodes",
+      "result": "INFO",
+      "detail": "0"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora_injected",
+      "check": "labels are binary {0,1}",
+      "result": "PASS",
+      "detail": "[0, 1]"
+    },
+    {
+      "section": "2 structure",
+      "dataset": "cora_injected",
+      "check": "class balance",
+      "result": "INFO",
+      "detail": "140 anomalies of 2708 (5.17%)"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "cora_injected",
+      "check": "seed 0: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "812(42)/542(28)/1354(70) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "cora_injected",
+      "check": "seed 1: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "812(42)/542(28)/1354(70) nodes (anomalies) train/val/test"
+    },
+    {
+      "section": "6 splits",
+      "dataset": "cora_injected",
+      "check": "seed 2: disjoint, cover all nodes, both classes in every split, reproducible",
+      "result": "PASS",
+      "detail": "812(42)/542(28)/1354(70) nodes (anomalies) train/val/test"
+    }
+  ],
+  "label_semantics": {
+    "weibo": {
+      "clustering_anom": 0.49865245966811833,
+      "clustering_norm": 0.42929820323462264,
+      "neigh_sim_anom": 0.4446524100780818,
+      "neigh_sim_norm": 0.05190141654989206,
+      "mean_degree_anom": 42.33986175115207,
+      "mean_degree_norm": 93.6896
+    },
+    "reddit": {
+      "clustering_anom": 0.0,
+      "clustering_norm": 0.0,
+      "neigh_sim_anom": 0.9943189137294645,
+      "neigh_sim_norm": 0.9952655905723572,
+      "mean_degree_anom": 11.37704918032787,
+      "mean_degree_norm": 13.3384
+    }
+  }
+}

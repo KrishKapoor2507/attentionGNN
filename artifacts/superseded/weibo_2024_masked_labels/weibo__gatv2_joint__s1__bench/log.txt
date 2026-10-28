@@ -1,0 +1,9 @@
+[00:13:01] run weibo__gatv2_joint__s1__bench
+[00:13:04] influence targets loaded from cache targets_weibo_e53b4f247a77c780.npz
+[00:13:07] model gatv2_joint: encoder params=59904 total=96531
+[00:13:09] epoch    1/60  loss=429.5037 attr=8.3211 struct=841.9709 inf=4.3577
+[00:14:03] epoch   21/60  loss=2.6618 attr=1.0121 struct=2.3984 inf=0.9565
+[00:14:55] epoch   41/60  loss=2.0760 attr=1.0039 struct=1.4962 inf=0.8259
+[00:15:46] epoch   60/60  loss=1.7413 attr=1.0000 struct=1.0875 inf=0.6976
+[00:16:17] run complete
+[00:16:17] total wall time 195.7s

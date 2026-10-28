@@ -1,0 +1,27 @@
+# Presentation and demo script (5 to 7 minutes)
+
+Run used for every demo: `cora_injected__gat_joint__s0__bench` (folder `artifacts/runs/cora_injected__gat_joint__s0__bench`,
+checkpoint sha256 starts `8ca22fd899ecdb8e`, training time 28 s on the CPU described in the report).
+Every dashboard page shows a provenance bar with the dataset, run ID, checkpoint hash and training time.
+
+**Before you start.** The dashboard is served on `localhost` only. Open PowerShell, `cd E:\AttentionGNN`, run `.\.venv\Scripts\streamlit.exe run app\streamlit_app.py`
+and wait for the browser to open `http://localhost:8501`. To finish, click the PowerShell window and press `Ctrl+C`.
+
+| Time | Slide / page | Input and action | Expected behaviour (what to say) | Evidence path |
+|---|---|---|---|---|
+| 0:00 | Slides 1-3 | none | State the question and the four research questions; say that influence is simulated and Cora anomalies are injected. | `reports/Attention_GNN_Final.pptx` |
+| 0:45 | Slides 4-8 | none | Attention softmax sums to 1 at each target, so we rank by attention a source *receives*; scores and controls are defined before the benchmark; Weibo organic labels (347 local vs 868 published) and Cora injected labels. | `docs/protocol.md`, report Sec. 3 |
+| 2:00 | Dashboard: **Data & graph summary** | Dataset `cora_injected`, seed `0` | Table with 2,708 nodes, 5,593 undirected edges, 140 anomalies (70 structural, 70 contextual), injection parameters shown. Switch to `weibo`: 8,405 nodes, 868 anomalies (10.3 %), organic label text. | `artifacts/runs/*/data.json` |
+| 2:15 | **Dataset authenticity** | Open the page; point at the orange *Key finding* card; filter *Section* to `1 integrity` | 42 checks pass, 0 fail, 2 findings: the upstream 2024 Weibo file blanks validation/test labels (347 of 868 anomalies stay labelled), so the project pins the original 2022 commit and checks its SHA-256. Mention that our first Weibo run used the bad file and was repeated. | `docs/dataset_validation.md`, `artifacts/results/dataset_validation.json` |
+| 2:30 | **Train / evaluate** | Keep *Smoke mode* ticked, dataset `cora_injected`, variant `gat_joint`, click **Start job** | Job status turns `running` then `finished` within about a minute; the log shows epochs and `run complete`. Say: smoke results are not results. Then pick the saved run and click **Verify hash and reproduce saved predictions**: hash matches, recomputed scores equal the saved predictions. | `artifacts/jobs/`, `artifacts/smoke/`, `src/attngnn/inference.py` |
+| 3:15 | **Anomaly scores** | Score `Combined`; move the threshold slider | Frozen validation threshold is 1.19; flagged counts change with the slider; metrics at the slider are shown on **validation only**; test metrics appear only at the frozen threshold (precision 0.43, recall 0.54, F1 0.48, ROC-AUC 0.84 for this seed). | `metrics.json` -> `anomaly.combined` |
+| 4:00 | **Influence ranking** | p = 0.1, rank by `inf_recv_att`, then by `inf_betweenness` | Top rows are high-degree hubs; node 1358 (degree 168) has simulated spread 37.2 ± 0.5 activated nodes; the simulated-spread column is a proxy and is labelled so. Ranking-quality table below: degree beats received attention; the uniform-attention control equals received attention. | `predictions.csv.gz`, `artifacts/results/tables/influence_cora_injected.csv` |
+| 4:45 | **Graph explorer & node inspector** | Centre `top anomaly score`, layer `mean`, head `mean`; change the head; scroll down and press **Play** on the cascade animation | Node 665 and its five neighbours; edge width shows attention; the inspector lists attention given to and received from each neighbour and the features that deviate most. Say: the sample is a 1-hop neighbourhood capped at 80 nodes, positions are arbitrary. The cascade animation spreads one random independent-cascade run step by step (orange seed, sand = newly activated, teal = already active); it illustrates the influence proxy and is not a measured result. | `src/attngnn/app_backend.py` |
+| 5:30 | **Demos** (four tabs) | Open each tab in turn | (1) *Known anomaly*: injected contextual node 665 is ranked 4 of 2,708 by the combined score. (2) *High-spread node*: node 1358, spread 37.2 ± 0.5. (3) *Explanation vs perturbation*: removing high-attention edges lowers the anomaly score more than random or low-attention removals (seed 0: +0.023, +0.003, -0.028; pooled over seeds the high-minus-random gap is +0.019, p = 0.0095). (4) *Saved model reload*: button recomputes every score from the checkpoint and reports a zero difference. (5) *Training replay*: press Play to watch the real per-epoch losses. (6) *ROC drawing*: press Play to draw the saved ROC curves. | `metrics.json` -> `explanation` |
+| 6:15 | **Results: comparison & ablation** and slides 10-13 | Dataset `cora_injected`, then `weibo` | Anomaly table (reconstruction about 0.77, attention-only 0.80 but a uniform control 0.79), influence table (degree and GCN head strong, received attention equal to the control), ablations, paired differences. Conclude: attention adds little beyond simple controls here; negative results are results. | `artifacts/results/tables/`, `artifacts/results/results_index.json` |
+| 6:45 | Slide 14 | none | Future work; invite questions. | report Sec. 7 |
+
+## Backup plan if the dashboard does not start
+
+The screenshots in `docs/screenshots/` show every page. The same numbers are in `artifacts/results/tables/*.csv`.
+If a port is busy, start the dashboard with `--server.port 8600` added to the command.

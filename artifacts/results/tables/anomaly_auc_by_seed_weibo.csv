@@ -1,0 +1,15 @@
+method (test ROC-AUC per seed),seed 0,seed 1,seed 2
+Isolation Forest (attributes),0.468,0.43,0.475
+Isolation Forest (attributes + structure),0.461,0.472,0.439
+GCN reconstruction (DOMINANT-style),0.802,0.779,0.791
+GAT reconstruction,0.78,0.742,0.79
+GATv2 reconstruction,0.786,0.762,0.77
+GAT attention-only (weighted feature discrepancy),0.625,0.647,0.554
+GAT combined (reconstruction + attention-only),0.71,0.705,0.726
+"GAT joint, reconstruction score",0.823,0.723,0.787
+"GAT joint, attention-only score",0.64,0.652,0.548
+"GAT joint, combined score",0.772,0.689,0.713
+"GCN joint, reconstruction score",0.802,0.781,0.79
+"GATv2 joint, reconstruction score",0.777,0.773,0.732
+Control: uniform-neighbour feature deviation (no attention),0.64,0.651,0.6
+Control: untrained-GAT attention-only,0.565,0.663,0.613

@@ -1,0 +1,9 @@
+[00:26:36] run weibo__gcn_joint__s2__bench
+[00:26:37] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:26:39] model gcn_joint: encoder params=29824 total=62163
+[00:26:40] epoch    1/60  loss=1.8163 attr=1.0032 struct=0.6005 inf=1.0144
+[00:26:57] epoch   21/60  loss=1.0576 attr=0.9976 struct=0.5103 inf=0.3036
+[00:27:14] epoch   41/60  loss=0.9972 attr=0.9972 struct=0.4763 inf=0.2604
+[00:27:31] epoch   60/60  loss=0.9862 attr=0.9974 struct=0.4717 inf=0.2517
+[00:27:41] run complete
+[00:27:41] total wall time 65.5s

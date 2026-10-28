@@ -1,0 +1,16 @@
+comparison (paired by seed),seeds,mean difference,per-seed range,seeds with positive difference
+Anomaly ROC-AUC: GAT attention-only minus uniform-neighbour control,5,+0.006,"[+0.004, +0.011]",5/5
+Anomaly ROC-AUC: trained GAT attention-only minus untrained-GAT attention-only,5,+0.005,"[+0.003, +0.011]",5/5
+Anomaly ROC-AUC: GAT reconstruction minus GCN reconstruction,5,+0.006,"[-0.002, +0.010]",4/5
+Anomaly ROC-AUC: GATv2 reconstruction minus GAT reconstruction,5,-0.005,"[-0.018, -0.000]",0/5
+Anomaly ROC-AUC: GAT joint rec. minus GAT anomaly-only rec.,5,+0.005,"[+0.000, +0.011]",5/5
+Anomaly ROC-AUC: GAT combined minus GAT reconstruction (anomaly-only models),5,+0.026,"[+0.017, +0.036]",5/5
+Anomaly ROC-AUC: GAT reconstruction minus Isolation Forest (attributes),5,+0.095,"[+0.053, +0.150]",5/5
+"Anomaly ROC-AUC: 4-head minus 1-head GAT (joint, reconstruction)",5,+0.006,"[-0.001, +0.015]",4/5
+Influence Spearman: GAT received attention minus uniform-attention control,5,+0.000,"[-0.014, +0.022]",3/5
+Influence Spearman: GAT received attention minus degree,5,-0.417,"[-0.430, -0.400]",0/5
+Influence Spearman: degree-adjusted minus raw received attention,5,-0.842,"[-0.880, -0.794]",0/5
+Influence Spearman: GCN head minus GAT head (joint),5,+0.084,"[+0.032, +0.131]",5/5
+Influence Spearman: GAT head joint minus influence-only,5,-0.031,"[-0.085, +0.028]",1/5
+Influence Spearman: GCN head minus degree,5,-0.020,"[-0.054, +0.001]",1/5
+Influence NDCG@50: GAT received attention minus degree,5,-0.092,"[-0.110, -0.072]",0/5

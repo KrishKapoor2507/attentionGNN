@@ -1,0 +1,9 @@
+# Only needed to rebuild the report, slides and screenshots on WINDOWS with Microsoft Office and Edge.
+-r requirements-dev.txt
+python-docx==1.2.0
+python-pptx==1.0.2
+pymupdf==2.0
+playwright==1.64.1
+pywin32==312
+pillow==13.0.0
+lxml==6.1.3

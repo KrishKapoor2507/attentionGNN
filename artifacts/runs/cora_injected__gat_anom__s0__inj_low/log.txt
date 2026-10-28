@@ -1,0 +1,14 @@
+[00:38:56] run cora_injected__gat_anom__s0__inj_low
+[00:39:02] influence targets simulated in 6.1s -> targets_cora_injected_b0b63fcd4f3f9430.npz
+[00:39:05] model gat_anom: encoder params=96192 total=195804
+[00:39:05] epoch    1/150  loss=1.0765 attr=1.4960 struct=0.6570 inf=1.0155
+[00:39:08] epoch   21/150  loss=0.7474 attr=0.9468 struct=0.5479 inf=0.9999
+[00:39:11] epoch   41/150  loss=0.6826 attr=0.9054 struct=0.4599 inf=1.0001
+[00:39:14] epoch   61/150  loss=0.6655 attr=0.8896 struct=0.4415 inf=1.0000
+[00:39:17] epoch   81/150  loss=0.6586 attr=0.8818 struct=0.4354 inf=1.0000
+[00:39:21] epoch  101/150  loss=0.6505 attr=0.8768 struct=0.4241 inf=1.0000
+[00:39:24] epoch  121/150  loss=0.6483 attr=0.8738 struct=0.4228 inf=1.0000
+[00:39:28] epoch  141/150  loss=0.6475 attr=0.8717 struct=0.4233 inf=1.0000
+[00:39:29] epoch  150/150  loss=0.6454 attr=0.8709 struct=0.4199 inf=1.0000
+[00:39:34] run complete
+[00:39:34] total wall time 37.8s

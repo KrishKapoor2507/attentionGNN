@@ -1,0 +1,62 @@
+{
+  "run_id": "cora_injected__gatv2_joint__s2__bench",
+  "tag": "bench",
+  "dataset": "cora_injected",
+  "variant": "gatv2_joint",
+  "seed": 2,
+  "config": {
+    "dataset": {
+      "normalise": "none",
+      "epochs": 150,
+      "edge_keep": 1.0,
+      "split": [
+        0.3,
+        0.2,
+        0.5
+      ],
+      "p_grid": [
+        0.05,
+        0.1,
+        0.15
+      ],
+      "reps": {
+        "train": 300,
+        "val": 300,
+        "test": 1000
+      },
+      "betweenness_pivots": null,
+      "data_args": {
+        "struct_cliques": 7,
+        "clique_size": 10,
+        "n_contextual": 70,
+        "k_candidates": 50
+      }
+    },
+    "model": {
+      "hidden": 64,
+      "layers": 2,
+      "share_weights": false
+    },
+    "variant": {
+      "encoder": "gatv2",
+      "heads": 4,
+      "w_rec": 1.0,
+      "lam_inf": 1.0
+    },
+    "inference": {
+      "set_ks": [
+        10,
+        20
+      ],
+      "set_reps": 500
+    }
+  },
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "started": "2026-10-25T22:32:25+0530"
+}

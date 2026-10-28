@@ -1,0 +1,29 @@
+# Theme and privacy only. This file is also used when deployed (Streamlit Community Cloud),
+# so it must NOT force a server address. Local runs use scripts\run_dashboard.ps1, which binds to localhost only.
+[server]
+headless = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+primaryColor = "#13808b"
+backgroundColor = "#f7f9fb"
+secondaryBackgroundColor = "#e6eef3"
+textColor = "#1b2634"
+font = "sans serif"
+headingFont = "serif"
+baseRadius = "0.8rem"
+showSidebarBorder = false
+paddingTop = "2rem"
+
+[theme.sidebar]
+backgroundColor = "#0b2545"
+secondaryBackgroundColor = "#13355f"
+textColor = "#e6eef3"
+primaryColor = "#e9c46a"

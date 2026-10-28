@@ -1,0 +1,3 @@
+[22:28:46] run cora_injected__iforest_attr__s2__bench
+[22:28:47] influence targets simulated in 1.0s -> targets_cora_injected_a74d4f56d798a793.npz
+[22:28:50] total wall time 3.9s

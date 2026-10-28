@@ -1,0 +1,9 @@
+[00:22:48] run weibo__gatv2_anom__s2__bench
+[00:22:49] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:22:51] model gatv2_anom: encoder params=59904 total=96531
+[00:22:52] epoch    1/60  loss=688.1254 attr=22.2492 struct=1354.0017 inf=4.3222
+[00:23:20] epoch   21/60  loss=1.5689 attr=1.0120 struct=2.1257 inf=1.0009
+[00:23:56] epoch   41/60  loss=1.1308 attr=1.0034 struct=1.2581 inf=1.0003
+[00:24:33] epoch   60/60  loss=1.0445 attr=1.0014 struct=1.0877 inf=1.0001
+[00:24:55] run complete
+[00:24:55] total wall time 126.9s

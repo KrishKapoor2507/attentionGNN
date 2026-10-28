@@ -1,0 +1,3 @@
+[12:30:13] run weibo__iforest_attr__s1__bench
+[12:30:38] influence targets simulated in 24.2s -> targets_weibo_d89db4eea4d69bdc.npz
+[12:30:41] total wall time 27.4s

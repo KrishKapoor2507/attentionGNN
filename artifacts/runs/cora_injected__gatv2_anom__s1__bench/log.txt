@@ -1,0 +1,14 @@
+[22:25:22] run cora_injected__gatv2_anom__s1__bench
+[22:25:23] influence targets loaded from cache targets_cora_injected_79a31415dd463ac7.npz
+[22:25:24] model gatv2_anom: encoder params=192128 total=295900
+[22:25:24] epoch    1/150  loss=1.2614 attr=1.8271 struct=0.6956 inf=1.0124
+[22:25:28] epoch   21/150  loss=0.7794 attr=0.9553 struct=0.6035 inf=1.0004
+[22:25:32] epoch   41/150  loss=0.6984 attr=0.9171 struct=0.4796 inf=1.0000
+[22:25:35] epoch   61/150  loss=0.6760 attr=0.8983 struct=0.4536 inf=1.0000
+[22:25:39] epoch   81/150  loss=0.6647 attr=0.8885 struct=0.4408 inf=1.0000
+[22:25:42] epoch  101/150  loss=0.6597 attr=0.8832 struct=0.4362 inf=1.0000
+[22:25:46] epoch  121/150  loss=0.6531 attr=0.8797 struct=0.4266 inf=1.0000
+[22:25:49] epoch  141/150  loss=0.6519 attr=0.8770 struct=0.4268 inf=1.0000
+[22:25:51] epoch  150/150  loss=0.6509 attr=0.8761 struct=0.4256 inf=1.0000
+[22:25:55] run complete
+[22:25:55] total wall time 32.3s

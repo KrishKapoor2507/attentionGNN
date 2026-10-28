@@ -1,0 +1,520 @@
+% =====================================================================
+% references.bib  --  Attention-Driven GNNs for Influence and Anomaly Detection
+% Compiled 2026-10-25. Every live entry below was checked against a primary or
+% publisher/proceedings/arXiv page that was actually opened. The `note` field says
+% exactly what was opened and any residual doubt. Entries that could NOT be checked
+% are in the commented section at the end (do not cite them until checked).
+% =====================================================================
+
+% ---------------------------- Core GNN models -------------------------
+@inproceedings{kipf2017gcn,
+  author    = {Kipf, Thomas N. and Welling, Max},
+  title     = {Semi-Supervised Classification with Graph Convolutional Networks},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2017},
+  eprint    = {1609.02907},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.1609.02907},
+  url       = {https://arxiv.org/abs/1609.02907},
+  note      = {Verified: arXiv abs page (comment: published at ICLR 2017) and full text read. ICLR proceedings page not opened.}
+}
+
+@inproceedings{velickovic2018gat,
+  author    = {Veli{\v{c}}kovi{\'c}, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Li{\`o}, Pietro and Bengio, Yoshua},
+  title     = {Graph Attention Networks},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2018},
+  eprint    = {1710.10903},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.1710.10903},
+  url       = {https://arxiv.org/abs/1710.10903},
+  note      = {Verified: arXiv abs page (comment: to appear at ICLR 2018) and full text read (arXiv v3 PDF header: published as a conference paper at ICLR 2018).}
+}
+
+@inproceedings{brody2022gatv2,
+  author    = {Brody, Shaked and Alon, Uri and Yahav, Eran},
+  title     = {How Attentive are Graph Attention Networks?},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2022},
+  eprint    = {2105.14491},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.2105.14491},
+  url       = {https://arxiv.org/abs/2105.14491},
+  note      = {Verified: arXiv abs page (comment: published in ICLR 2022) and full text read.}
+}
+
+% ---------------------------- Anomaly detection -----------------------
+@inproceedings{ding2019dominant,
+  author    = {Ding, Kaize and Li, Jundong and Bhanushali, Rohit and Liu, Huan},
+  title     = {Deep Anomaly Detection on Attributed Networks},
+  booktitle = {Proceedings of the 2019 SIAM International Conference on Data Mining (SDM)},
+  pages     = {594--602},
+  year      = {2019},
+  publisher = {SIAM},
+  doi       = {10.1137/1.9781611975673.67},
+  url       = {https://doi.org/10.1137/1.9781611975673.67},
+  note      = {Bibliographic data verified on ASU Pure record (pages 594-602, ISBN, DOI) and the authors' GitHub README. The paper PDF itself could NOT be opened (SIAM returned 403; the ASU-hosted PDF sits behind a login). Method details were therefore verified from the official PyTorch code, not the paper text.}
+}
+
+@inproceedings{gutierrez2020multiscale,
+  author    = {Guti{\'e}rrez-G{\'o}mez, Leonardo and Bovet, Alexandre and Delvenne, Jean-Charles},
+  title     = {Multi-Scale Anomaly Detection on Attributed Networks},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume    = {34},
+  number    = {01},
+  pages     = {678--685},
+  year      = {2020},
+  doi       = {10.1609/aaai.v34i01.5409},
+  eprint    = {1912.04144},
+  archivePrefix = {arXiv},
+  url       = {https://ojs.aaai.org/index.php/AAAI/article/view/5409},
+  note      = {Verified: AAAI OJS page (volume, issue, pages, DOI) and arXiv full text read.}
+}
+
+@inproceedings{liu2022bond,
+  author    = {Liu, Kay and Dou, Yingtong and Zhao, Yue and Ding, Xueying and Hu, Xiyang and Zhang, Ruitong and Ding, Kaize and Chen, Canyu and Peng, Hao and Shu, Kai and Sun, Lichao and Li, Jundong and Chen, George H. and Jia, Zhihao and Yu, Philip S.},
+  title     = {{BOND}: Benchmarking Unsupervised Outlier Node Detection on Static Attributed Graphs},
+  booktitle = {Advances in Neural Information Processing Systems 35 (NeurIPS 2022), Datasets and Benchmarks Track},
+  year      = {2022},
+  eprint    = {2206.10071},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.2206.10071},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/acc1ec4a9c780006c9aafd595104816b-Abstract-Datasets_and_Benchmarks.html},
+  note      = {Verified: NeurIPS proceedings page (authors, track) and arXiv v2 full text read (Tables 1, 3, 4, 6, Appendix A.1).}
+}
+
+@article{liu2024pygod,
+  author    = {Liu, Kay and Dou, Yingtong and Ding, Xueying and Hu, Xiyang and Zhang, Ruitong and Peng, Hao and Sun, Lichao and Yu, Philip S.},
+  title     = {{PyGOD}: A Python Library for Graph Outlier Detection},
+  journal   = {Journal of Machine Learning Research},
+  volume    = {25},
+  number    = {141},
+  pages     = {1--9},
+  year      = {2024},
+  url       = {https://jmlr.org/papers/v25/23-0963.html},
+  note      = {Verified: JMLR paper page and PyGOD GitHub README (which also asks users to cite both PyGOD and BOND).}
+}
+
+@article{akoglu2015survey,
+  author    = {Akoglu, Leman and Tong, Hanghang and Koutra, Danai},
+  title     = {Graph Based Anomaly Detection and Description: A Survey},
+  journal   = {Data Mining and Knowledge Discovery},
+  volume    = {29},
+  number    = {3},
+  pages     = {626--688},
+  year      = {2015},
+  doi       = {10.1007/s10618-014-0365-y},
+  eprint    = {1404.4679},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1404.4679},
+  note      = {Verified: arXiv abs page and full text (arXiv v2 preprint, 2014) read; journal volume/issue/pages/DOI verified on ASU Pure record. The Springer page itself could not be opened.}
+}
+
+@misc{fan2020anomalydae,
+  author    = {Fan, Haoyi and Zhang, Fengbin and Li, Zuoyong},
+  title     = {{AnomalyDAE}: Dual Autoencoder for Anomaly Detection on Attributed Networks},
+  year      = {2020},
+  eprint    = {2002.03665},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.2002.03665},
+  url       = {https://arxiv.org/abs/2002.03665},
+  note      = {Verified: arXiv abs page (comment: accepted by ICASSP 2020). IEEE proceedings page/DOI not opened, so cited as arXiv preprint with ICASSP 2020 acceptance noted.}
+}
+
+@article{pei2022resgcn,
+  author    = {Pei, Yulong and Huang, Tianjin and van Ipenburg, Werner and Pechenizkiy, Mykola},
+  title     = {{ResGCN}: Attention-based Deep Residual Modeling for Anomaly Detection on Attributed Networks},
+  journal   = {Machine Learning},
+  volume    = {111},
+  number    = {2},
+  pages     = {519--541},
+  year      = {2022},
+  eprint    = {2009.14738},
+  archivePrefix = {arXiv},
+  doi       = {10.1007/s10994-021-06044-0},
+  url       = {https://arxiv.org/abs/2009.14738},
+  note      = {arXiv abstract and full text opened (author list, method, injection protocol). Journal volume/pages/DOI come from a search-result record (MLanthology), not from the Springer page; re-check before final submission.}
+}
+
+@article{zhang2022dualsvdae,
+  author    = {Zhang, Fengbin and Fan, Haoyi and Wang, Ruidong and Li, Zuoyong and Liang, Tiancai},
+  title     = {Deep Dual Support Vector Data Description for Anomaly Detection on Attributed Networks},
+  journal   = {International Journal of Intelligent Systems},
+  year      = {2022},
+  eprint    = {2109.00138},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.2109.00138},
+  url       = {https://arxiv.org/abs/2109.00138},
+  note      = {arXiv abs page opened (comment: accepted by IJIS). NOT attention-based. Included only as a near-match discussed in zhang2022_verification.md. Volume 37, pp. 1509-1528 appear only in a search snippet and are deliberately omitted.}
+}
+
+@article{roy2024gadnr,
+  author    = {Roy, Amit and Shu, Juan and Li, Jia and Yang, Carl and Elshocht, Olivier and Smeets, Jeroen and Li, Pan},
+  title     = {{GAD-NR}: Graph Anomaly Detection via Neighborhood Reconstruction},
+  journal   = {arXiv preprint (accepted at WSDM 2024)},
+  year      = {2024},
+  eprint    = {2306.01951},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2306.01951},
+  note      = {Verified: arXiv abs page (comment: accepted at WSDM 2024; related DOI 10.1145/3616855.3635767 listed there). Only the abstract page was read.}
+}
+
+@inproceedings{tang2023gadbench,
+  author    = {Tang, Jianheng and Hua, Fengrui and Gao, Ziqi and Zhao, Peilin and Li, Jia},
+  title     = {{GADBench}: Revisiting and Benchmarking Supervised Graph Anomaly Detection},
+  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks Track},
+  year      = {2023},
+  eprint    = {2306.12251},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2306.12251},
+  note      = {Verified: arXiv abs page (comment: NeurIPS 2023 D&B camera ready) plus proceedings URL in search results. Supervised setting, so NOT directly comparable with our unsupervised protocol.}
+}
+
+@inproceedings{gu2024threerevisits,
+  author    = {Gu, Jing and Zou, Dongmian},
+  title     = {Three Revisits to Node-Level Graph Anomaly Detection: Outliers, Message Passing and Hyperbolic Neural Networks},
+  booktitle = {Proceedings of the Second Learning on Graphs Conference},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {231},
+  pages     = {14:1--14:29},
+  year      = {2024},
+  url       = {https://proceedings.mlr.press/v231/gu24a.html},
+  note      = {Verified: PMLR page (authors, volume, pages). Abstract read, full text not read.}
+}
+
+@inproceedings{wei2025controllability,
+  author    = {Wei, Yifan and Said, Anwar and Abbas, Waseem and Koutsoukos, Xenofon},
+  title     = {Robust Anomaly Detection with Graph Neural Networks using Controllability},
+  booktitle = {IEEE Conference on Artificial Intelligence (CAI)},
+  year      = {2025},
+  eprint    = {2507.13954},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2507.13954},
+  note      = {Verified: arXiv abs page (comment: IEEE CAI 2025). Abstract only. Uses a node-influence measure (average controllability) as an INPUT edge weight/feature for anomaly detection.}
+}
+
+% ---------------------------- Explanation & attention critique --------
+@inproceedings{ying2019gnnexplainer,
+  author    = {Ying, Zhitao and Bourgeois, Dylan and You, Jiaxuan and Zitnik, Marinka and Leskovec, Jure},
+  title     = {{GNNExplainer}: Generating Explanations for Graph Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems 32 (NeurIPS 2019)},
+  year      = {2019},
+  eprint    = {1903.03894},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2019/hash/d80b7040b773199015de6d3b4293c8ff-Abstract.html},
+  note      = {Verified: NeurIPS proceedings page (lists first author as Zhitao Ying; arXiv lists Rex Ying) and arXiv full text read.}
+}
+
+@inproceedings{jain2019attention,
+  author    = {Jain, Sarthak and Wallace, Byron C.},
+  title     = {Attention is not {Explanation}},
+  booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1},
+  pages     = {3543--3556},
+  year      = {2019},
+  address   = {Minneapolis, Minnesota},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/N19-1357},
+  url       = {https://aclanthology.org/N19-1357/},
+  note      = {Verified: ACL Anthology page (abstract level only; NLP models, not graphs).}
+}
+
+@inproceedings{wiegreffe2019notnot,
+  author    = {Wiegreffe, Sarah and Pinter, Yuval},
+  title     = {Attention is not not {Explanation}},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages     = {11--20},
+  year      = {2019},
+  address   = {Hong Kong, China},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/D19-1002},
+  url       = {https://aclanthology.org/D19-1002/},
+  note      = {Verified: ACL Anthology page (abstract level only; NLP models, not graphs).}
+}
+
+@misc{hu2024faithfulgat,
+  author    = {Hu, Lijie and Huang, Tianhao and Yu, Lu and Lin, Wanyu and Zheng, Tianhang and Wang, Di},
+  title     = {Faithful Interpretation for Graph Neural Networks},
+  year      = {2024},
+  eprint    = {2410.06950},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2410.06950},
+  note      = {Verified: arXiv abs page, abstract only. Preprint; no venue listed on the page.}
+}
+
+@article{agarwal2023graphxai,
+  author    = {Agarwal, Chirag and Queen, Owen and Lakkaraju, Himabindu and Zitnik, Marinka},
+  title     = {Evaluating Explainability for Graph Neural Networks},
+  journal   = {Scientific Data},
+  volume    = {10},
+  pages     = {144},
+  year      = {2023},
+  doi       = {10.1038/s41597-023-01974-x},
+  url       = {https://pmc.ncbi.nlm.nih.gov/articles/PMC10024712/},
+  note      = {Verified: PMC full-text page opened (citation, GEF faithfulness metric, discussion).}
+}
+
+@article{longa2025explainers,
+  author    = {Longa, Antonio and Azzolin, Steve and Santin, Gabriele and Cencetti, Giulia and Li{\`o}, Pietro and Lepri, Bruno and Passerini, Andrea},
+  title     = {Explaining the Explainers in Graph Neural Networks: a Comparative Study},
+  journal   = {ACM Computing Surveys},
+  volume    = {57},
+  number    = {5},
+  pages     = {Article 120},
+  year      = {2025},
+  doi       = {10.1145/3696444},
+  eprint    = {2210.15304},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2210.15304},
+  note      = {Verified: arXiv abs page (journal reference: ACM Comput. Surv. 57, 5, Art. 120, 2025; related DOI listed). Abstract only.}
+}
+
+% ---------------------------- Influence & centrality -------------------
+@inproceedings{kempe2003influence,
+  author    = {Kempe, David and Kleinberg, Jon and Tardos, {\'E}va},
+  title     = {Maximizing the Spread of Influence through a Social Network},
+  booktitle = {Proceedings of the 9th International Conference on Knowledge Discovery and Data Mining (KDD '03)},
+  pages     = {137--146},
+  year      = {2003},
+  doi       = {10.1145/956750.956769},
+  url       = {https://doi.org/10.1145/956750.956769},
+  note      = {Bibliographic data verified from the reference list of the opened journal version (kempe2015influence, ref. [51]). ACM page returned 403 and the Cornell PDF failed on a certificate error, so the KDD text itself was NOT read; model definitions were read in the journal version.}
+}
+
+@article{kempe2015influence,
+  author    = {Kempe, David and Kleinberg, Jon and Tardos, {\'E}va},
+  title     = {Maximizing the Spread of Influence through a Social Network},
+  journal   = {Theory of Computing},
+  volume    = {11},
+  number    = {4},
+  pages     = {105--147},
+  year      = {2015},
+  doi       = {10.4086/toc.2015.v011a004},
+  url       = {https://theoryofcomputing.org/articles/v011a004/},
+  note      = {Verified: full text read (open access, CC-BY). Expanded journal version of the KDD 2003 and ICALP 2005 papers.}
+}
+
+@book{newman2010networks,
+  author    = {Newman, Mark E. J.},
+  title     = {Networks: An Introduction},
+  publisher = {Oxford University Press},
+  year      = {2010},
+  isbn      = {9780199206650},
+  doi       = {10.1093/acprof:oso/9780199206650.001.0001},
+  url       = {https://academic.oup.com/book/27303},
+  note      = {Verified: Oxford Academic page (published 25 March 2010; print ISBN 9780199206650; page states a newer edition exists). Page count differs between retailer records, so none is given.}
+}
+
+@techreport{page1999pagerank,
+  author      = {Page, Lawrence and Brin, Sergey and Motwani, Rajeev and Winograd, Terry},
+  title       = {The {PageRank} Citation Ranking: Bringing Order to the Web},
+  institution = {Stanford InfoLab},
+  year        = {1999},
+  url         = {http://ilpubs.stanford.edu:8090/422/},
+  note        = {Title/authors/institution/year corroborated by (i) the reference list of the opened DeepLinker paper (gu2019deeplinker) and (ii) a search-result record. The Stanford page itself could not be opened (connection refused / SSL error), so the report number (1999-66) quoted in search results is unverified and omitted.}
+}
+
+@article{brandes2001faster,
+  author    = {Brandes, Ulrik},
+  title     = {A Faster Algorithm for Betweenness Centrality},
+  journal   = {Journal of Mathematical Sociology},
+  volume    = {25},
+  number    = {2},
+  pages     = {163--177},
+  year      = {2001},
+  doi       = {10.1080/0022250X.2001.9990249},
+  url       = {https://doi.org/10.1080/0022250X.2001.9990249},
+  note      = {Verified: University of Konstanz KOPS repository record (publisher page returned 403).}
+}
+
+@article{brandes2007centrality,
+  author    = {Brandes, Ulrik and Pich, Christian},
+  title     = {Centrality Estimation in Large Networks},
+  journal   = {International Journal of Bifurcation and Chaos},
+  volume    = {17},
+  number    = {7},
+  pages     = {2303--2318},
+  year      = {2007},
+  doi       = {10.1142/S0218127407018403},
+  url       = {https://doi.org/10.1142/S0218127407018403},
+  note      = {Verified: University of Konstanz KOPS repository record and abstract (estimation of shortest-path centralities from a limited number of single-source computations; study of source-selection strategies).}
+}
+
+@misc{gu2019deeplinker,
+  author    = {Gu, Weiwei and Gao, Fei and Lou, Xiaodan and Zhang, Jiang},
+  title     = {Link Prediction via Graph Attention Network},
+  year      = {2019},
+  eprint    = {1910.04807},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1910.04807},
+  note      = {Verified: arXiv abs page and full text read (Sec. 4.3, Eq. 7 'Attention Rank', Table 4). Preprint version of gu2021ganr. NOTE: a different 'Zhang' (Jiang Zhang) is the corresponding author; this is link prediction, NOT the proposal's 'Zhang et al. 2022'.}
+}
+
+@article{gu2021ganr,
+  author    = {Gu, Weiwei and Gao, Fei and Lou, Xiaodan and Zhang, Jiang},
+  title     = {Discovering Latent Node Information by Graph Attention Network},
+  journal   = {Scientific Reports},
+  volume    = {11},
+  pages     = {6967},
+  year      = {2021},
+  doi       = {10.1038/s41598-021-85826-x},
+  url       = {https://pmc.ncbi.nlm.nih.gov/articles/PMC7997918/},
+  note      = {Verified: PMC full-text page opened (citation line, Attention Rank, SIR validation, baselines, datasets, limitations).}
+}
+
+@inproceedings{manchanda2020gcomb,
+  author    = {Manchanda, Sahil and Mittal, Akash and Dhawan, Anuj and Medya, Sourav and Ranu, Sayan and Singh, Ambuj},
+  title     = {{GCOMB}: Learning Budget-Constrained Combinatorial Algorithms over Billion-Sized Graphs},
+  booktitle = {Advances in Neural Information Processing Systems 33 (NeurIPS 2020)},
+  year      = {2020},
+  eprint    = {1903.03332},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1903.03332},
+  note      = {Verified: arXiv abs page (note: the arXiv title is the earlier name 'Learning Heuristics over Large Graphs via Deep Reinforcement Learning'; the NeurIPS 2020 title, from the proceedings listing seen in search results, is the one given here). Abstract only.}
+}
+
+@inproceedings{ling2023deepim,
+  author    = {Ling, Chen and Jiang, Junji and Wang, Junxiang and Thai, My T. and Xue, Renhao and Song, James and Qiu, Meikang and Zhao, Liang},
+  title     = {Deep Graph Representation Learning and Optimization for Influence Maximization},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  pages     = {21350--21361},
+  year      = {2023},
+  url       = {https://proceedings.mlr.press/v202/ling23b.html},
+  note      = {Verified: PMLR page (abstract level).}
+}
+
+@article{chen2023touplegdd,
+  author    = {Chen, Tiantian and Yan, Siwen and Guo, Jianxiong and Wu, Weili},
+  title     = {{ToupleGDD}: A Fine-Designed Solution of Influence Maximization by Deep Reinforcement Learning},
+  journal   = {IEEE Transactions on Computational Social Systems},
+  year      = {2023},
+  doi       = {10.1109/TCSS.2023.3272331},
+  eprint    = {2210.07500},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2210.07500},
+  note      = {Verified: arXiv abs page (journal reference and DOI shown there). Abstract only. Search results elsewhere cite vol. 11 no. 2, 2024, pp. 2210-2221; that was not confirmed on an opened page and is omitted.}
+}
+
+% ---------------------------- Datasets and provenance ------------------
+@inproceedings{yang2016planetoid,
+  author    = {Yang, Zhilin and Cohen, William W. and Salakhutdinov, Ruslan},
+  title     = {Revisiting Semi-Supervised Learning with Graph Embeddings},
+  booktitle = {Proceedings of the 33rd International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {48},
+  pages     = {40--48},
+  year      = {2016},
+  eprint    = {1603.08861},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.mlr.press/v48/yanga16.html},
+  note      = {Verified: PMLR page and arXiv abs page.}
+}
+
+@article{sen2008collective,
+  author    = {Sen, Prithviraj and Namata, Galileo and Bilgic, Mustafa and Getoor, Lise and Galligher, Brian and Eliassi-Rad, Tina},
+  title     = {Collective Classification in Network Data},
+  journal   = {AI Magazine},
+  volume    = {29},
+  number    = {3},
+  pages     = {93},
+  year      = {2008},
+  doi       = {10.1609/aimag.v29i3.2157},
+  url       = {https://doi.org/10.1609/aimag.v29i3.2157},
+  note      = {Verified: AAAI OJS page. The OJS page spells the fifth author 'Galligher'; other sources spell it 'Gallagher'. Spelling kept as on the publisher page.}
+}
+
+@misc{kumar2019jodie,
+  author    = {Kumar, Srijan and Zhang, Xikun and Leskovec, Jure},
+  title     = {Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks},
+  year      = {2019},
+  eprint    = {1908.01207},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/1908.01207},
+  note      = {Verified: arXiv abs page (comment: accepted as ACM SIGKDD 2019 research-track oral). Dataset page https://snap.stanford.edu/jodie/ opened (lists reddit.csv; states no licence; requests citation).}
+}
+
+@inproceedings{zhao2020errorbounded,
+  author    = {Zhao, Tong and Deng, Chuchen and Yu, Kaifeng and Jiang, Tianwen and Wang, Daheng and Jiang, Meng},
+  title     = {Error-Bounded Graph Anomaly Loss for {GNNs}},
+  booktitle = {Proceedings of the 29th ACM International Conference on Information \& Knowledge Management (CIKM)},
+  pages     = {1873--1882},
+  year      = {2020},
+  url       = {https://github.com/zhao-tong/Graph-Anomaly-Loss},
+  note      = {Verified: authors/title/venue/pages from the authors' GitHub README BibTeX and from BOND's reference [86]. ACM page returned 403 (DOI 10.1145/3340531.3411979 appears only in search results, so is not given as a field). Identified by BOND as the source of the Weibo data.}
+}
+
+% =====================================================================
+% NOT VERIFIED -- do NOT cite until opened on a primary/publisher page
+% =====================================================================
+% mccallum2000automating : McCallum, Nigam, Rennie, Seymore. "Automating the Construction
+%   of Internet Portals with Machine Learning". Information Retrieval 3(2):127-163, 2000.
+%   (DOI 10.1023/A:1009953814988). Seen only in DBLP-derived search snippets; the Webis
+%   anthology link returned 404. Cora provenance in BOND is cited to Sen et al. 2008 instead.
+% zhang2022attention : "Zhang et al. (2022), Attention-based Anomaly Detection on Graphs"
+%   -- NOT FOUND. See zhang2022_verification.md.
+% yu2022graphattention : Yu, Zha, Jin, Wu, Dong. "Graph-Based Anomaly Detection via Attention
+%   Mechanism". LNCS (ICIC 2022), DOI 10.1007/978-3-031-13870-6_33. Seen only as an OpenAlex/
+%   Crossref record; not opened.
+% you2020gatae : You, Gan, Fu, Wang. "GATAE: Graph Attention-based Anomaly Detection on
+%   Attributed Networks". ICCC 2020, DOI 10.1109/ICCC49849.2020.9238879. Seen only in an
+%   OpenAlex record; not opened.
+% yu2020rcnn : Yu, Wang, Fu. RCNN, Knowledge-Based Systems 2020, DOI 10.1016/j.knosys.2020.105893
+%   (title per search record: 'Identifying critical nodes in complex networks via graph
+%   convolutional networks'). Publisher page redirected and could not be read.
+% zhao2020infgcn : Zhao, Jia, Zhou. InfGCN (2020; venue not confirmed). Search record only.
+% liu2021cola : Liu, Li, Pan, Gong, Zhou, Karypis. "Anomaly Detection on Attributed Networks via
+%   Contrastive Self-Supervised Learning". IEEE TNNLS (2021). arXiv 2103.00113 abs page and PDF were
+%   opened (used for injection-protocol corroboration) but journal volume/pages were not.
+% song2007conditional : Song, Wu, Jermaine, Ranka. "Conditional Anomaly Detection". IEEE TKDE 19(5):631-645, 2007.
+%   Seen only in the reference lists of CoLA and ResGCN (opened); cited by them as the origin of the contextual scheme.
+
+% ---------------------------- Baselines, tooling, training ------------
+@inproceedings{liu2008isolation,
+  author    = {Liu, Fei Tony and Ting, Kai Ming and Zhou, Zhi-Hua},
+  title     = {Isolation Forest},
+  booktitle = {2008 Eighth IEEE International Conference on Data Mining (ICDM)},
+  pages     = {413--422},
+  year      = {2008},
+  publisher = {IEEE},
+  doi       = {10.1109/ICDM.2008.17},
+  url       = {https://doi.org/10.1109/ICDM.2008.17},
+  note      = {Verified: Crossref record for the DOI (title, authors, container title, year, pages 413-422) and the authors' Nanjing University PDF (title and authors on first page). The IEEE Xplore page could not be opened (HTTP 418 / empty content).}
+}
+
+@inproceedings{fey2019pyg,
+  author    = {Fey, Matthias and Lenssen, Jan Eric},
+  title     = {Fast Graph Representation Learning with {PyTorch Geometric}},
+  booktitle = {ICLR 2019 Workshop on Representation Learning on Graphs and Manifolds},
+  year      = {2019},
+  eprint    = {1903.02428},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.1903.02428},
+  url       = {https://arxiv.org/abs/1903.02428},
+  note      = {Verified: arXiv abs page (comment: ICLR 2019 (RLGM Workshop)). Workshop name expanded from the acronym RLGM; workshop website not opened.}
+}
+
+@inproceedings{rong2020dropedge,
+  author    = {Rong, Yu and Huang, Wenbing and Xu, Tingyang and Huang, Junzhou},
+  title     = {{DropEdge}: Towards Deep Graph Convolutional Networks on Node Classification},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2020},
+  eprint    = {1907.10903},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.1907.10903},
+  url       = {https://arxiv.org/abs/1907.10903},
+  note      = {Verified: arXiv abs page (title, authors; comment gives only '13 pages', no venue) and the ICLR 2020 virtual-site poster page (venue ICLR 2020). OpenReview page blocked by a browser check.}
+}
+
+@inproceedings{kingma2015adam,
+  author    = {Kingma, Diederik P. and Ba, Jimmy},
+  title     = {Adam: A Method for Stochastic Optimization},
+  booktitle = {3rd International Conference on Learning Representations (ICLR)},
+  address   = {San Diego, CA},
+  year      = {2015},
+  eprint    = {1412.6980},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.1412.6980},
+  url       = {https://arxiv.org/abs/1412.6980},
+  note      = {Verified: arXiv abs page (comment: published as a conference paper at the 3rd International Conference for Learning Representations, San Diego, 2015). ICLR proceedings page not opened.}
+}

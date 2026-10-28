@@ -1,0 +1,11 @@
+E:\AttentionGNN\.venv\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[00:51:11] run weibo__gatv2_joint__s0__prof
+[00:51:12] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[00:51:14] model gatv2_joint: encoder params=59904 total=96531
+[00:51:16] epoch    1/60  loss=481.1341 attr=14.0973 struct=943.0928 inf=2.5391
+[00:51:43] epoch   21/60  loss=2.2120 attr=1.0122 struct=1.6230 inf=0.8943
+[00:52:08] epoch   41/60  loss=1.9876 attr=1.0050 struct=1.4679 inf=0.7511
+[00:52:32] epoch   60/60  loss=1.6745 attr=1.0029 struct=1.0201 inf=0.6631
+[00:52:50] run complete
+[00:52:51] total wall time 99.2s

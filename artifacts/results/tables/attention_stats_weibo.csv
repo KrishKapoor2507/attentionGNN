@@ -1,0 +1,4 @@
+variant,mean attention entropy ratio L1,L2,"Spearman(received attention, degree)",mean alpha,uniform-attention mean alpha
+gat_anom,0.564,0.608,0.276,0.011,0.011
+gat_joint,0.562,0.608,0.263,0.011,0.011
+gatv2_joint,0.608,0.434,0.301,0.011,0.011

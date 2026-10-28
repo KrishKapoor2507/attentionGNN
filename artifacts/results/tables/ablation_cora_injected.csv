@@ -1,0 +1,23 @@
+ablation,configuration,variant,Anomaly ROC-AUC,Anomaly AP,Influence Spearman (head),Influence Spearman (recv. attention),Encoder params,Total params,seeds
+1. Encoder family (reconstruction only),GCN,gcn_anom,0.765 ± 0.030 [n=5],0.344 ± 0.037 [n=5],n/a,n/a,95936 ± 0 [n=5],195420 ± 0 [n=5],5
+1. Encoder family (reconstruction only),GAT,gat_anom,0.771 ± 0.031 [n=5],0.362 ± 0.033 [n=5],n/a,0.331 ± 0.013 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+1. Encoder family (reconstruction only),GATv2,gatv2_anom,0.767 ± 0.026 [n=5],0.352 ± 0.031 [n=5],n/a,0.333 ± 0.014 [n=5],192128 ± 0 [n=5],295900 ± 0 [n=5],5
+1b. Encoder family (joint training),GCN,gcn_joint,0.776 ± 0.023 [n=5],0.323 ± 0.050 [n=5],0.732 ± 0.020 [n=5],n/a,95936 ± 0 [n=5],195420 ± 0 [n=5],5
+1b. Encoder family (joint training),GAT,gat_joint,0.776 ± 0.033 [n=5],0.318 ± 0.054 [n=5],0.648 ± 0.043 [n=5],0.335 ± 0.014 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+1b. Encoder family (joint training),GATv2,gatv2_joint,0.769 ± 0.027 [n=5],0.357 ± 0.028 [n=5],0.667 ± 0.029 [n=5],0.343 ± 0.016 [n=5],192128 ± 0 [n=5],295900 ± 0 [n=5],5
+2. Heads (joint training),1 head x 64,gat1h_joint,0.770 ± 0.030 [n=5],0.364 ± 0.028 [n=5],0.637 ± 0.016 [n=5],0.261 ± 0.049 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+2. Heads (joint training),4 heads x 16,gat_joint,0.776 ± 0.033 [n=5],0.318 ± 0.054 [n=5],0.648 ± 0.043 [n=5],0.335 ± 0.014 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+4. Training mode (GAT),anomaly-only,gat_anom,0.771 ± 0.031 [n=5],0.362 ± 0.033 [n=5],n/a,0.331 ± 0.013 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+4. Training mode (GAT),influence-only,gat_inf,n/a (head untrained),n/a (head untrained),0.680 ± 0.021 [n=5],0.340 ± 0.014 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+4. Training mode (GAT),joint,gat_joint,0.776 ± 0.033 [n=5],0.318 ± 0.054 [n=5],0.648 ± 0.043 [n=5],0.335 ± 0.014 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,reconstruction-only score [gat_anom],gat_anom,0.771 ± 0.031 [n=5],0.362 ± 0.033 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,reconstruction-only score [gat_joint],gat_joint,0.776 ± 0.033 [n=5],0.318 ± 0.054 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,attention-only score [gat_anom],gat_anom,0.796 ± 0.034 [n=5],0.291 ± 0.023 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,attention-only score [gat_joint],gat_joint,0.798 ± 0.033 [n=5],0.293 ± 0.018 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,combined score (0.5 / 0.5) [gat_anom],gat_anom,0.798 ± 0.034 [n=5],0.383 ± 0.027 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,combined score (0.5 / 0.5) [gat_joint],gat_joint,0.803 ± 0.033 [n=5],0.378 ± 0.032 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,uniform-neighbour deviation (control) [gat_anom],gat_anom,0.790 ± 0.036 [n=5],0.284 ± 0.023 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+3. Anomaly score type,uniform-neighbour deviation (control) [gat_joint],gat_joint,0.790 ± 0.036 [n=5],0.284 ± 0.023 [n=5],n/a,n/a,96192 ± 0 [n=5],195804 ± 0 [n=5],5
+5. Degree adjustment (GAT joint),"received attention, raw",gat_joint,n/a,n/a,n/a,0.335 ± 0.014 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+5. Degree adjustment (GAT joint),degree-adjusted (OLS residual of log R),gat_joint,n/a,n/a,n/a,-0.507 ± 0.030 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5
+5. Degree adjustment (GAT joint),received attention / degree,gat_joint,n/a,n/a,n/a,-0.548 ± 0.013 [n=5],96192 ± 0 [n=5],195804 ± 0 [n=5],5

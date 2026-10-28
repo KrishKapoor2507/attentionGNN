@@ -1,0 +1,10 @@
+[00:46:21] run weibo__gat_joint__s0__prof
+[00:46:22] influence targets loaded from cache targets_weibo_ff819f3917590c98.npz
+[00:46:25] model gat_joint: encoder params=30080 total=62547
+[00:46:26] epoch    1/60  loss=1923.0905 attr=40.5020 struct=3791.7598 inf=6.9595
+[00:46:47] epoch   21/60  loss=4.5640 attr=1.0364 struct=6.1751 inf=0.9583
+[00:47:05] epoch   41/60  loss=3.3256 attr=1.0131 struct=4.0608 inf=0.7886
+[00:47:21] epoch   60/60  loss=2.7474 attr=1.0055 struct=3.0332 inf=0.7281
+[00:51:02] explanation perturbation done in 207.1s
+[00:51:02] run complete
+[00:51:02] total wall time 281.0s

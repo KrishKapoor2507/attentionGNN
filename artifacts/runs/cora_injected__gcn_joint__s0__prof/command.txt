@@ -1,0 +1,1 @@
+python -m attngnn.cli run --dataset cora_injected --variant gcn_joint --seed 0 --tag prof

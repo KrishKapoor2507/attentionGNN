@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "name": "weibo",
+    "nodes": 8405,
+    "undirected_edges": 377271,
+    "directed_arcs": 754542,
+    "features": 400,
+    "isolated_nodes": 0,
+    "mean_degree": 89.77299226650803,
+    "max_degree": 4359,
+    "median_degree": 59.0,
+    "missing_values": 0,
+    "feature_min": -421.9837951660156,
+    "feature_max": 1254.335693359375,
+    "direction": "symmetrised (undirected) for modelling",
+    "self_loops_after_cleaning": 0,
+    "anomalies": 347,
+    "anomaly_rate": 0.041284949434860205,
+    "label_provenance": "organic anomaly label shipped with the benchmark (suspicious-user behaviour; see docs/literature/dataset_facts.md)",
+    "meta": {
+      "source": "PyGOD data repository (pygod-team/data), BOND benchmark",
+      "url": "https://github.com/pygod-team/data/raw/main/weibo.pt.zip",
+      "label_meaning": "organic anomaly label shipped with the benchmark (suspicious-user behaviour; see docs/literature/dataset_facts.md)",
+      "organic": true,
+      "preprocessing": {
+        "edges_in": 407963,
+        "self_loops_removed": 0,
+        "duplicate_arcs_removed": 0,
+        "arcs_without_reverse_before_symmetrise": 346579,
+        "directed_in_source": true,
+        "edges_out_directed_arcs": 754542,
+        "undirected_edges": 377271
+      },
+      "pt_sha256": "3827dca358a7bab33bef0b494db74e22642aad779c15da764d9ccec9806ce46c",
+      "zip_sha256": "c4a5fe4ca61a9566e051bf0544816c9340c49b031dfd07693b473d18e4e6f2f9",
+      "raw_node_count": 8405,
+      "raw_feature_dim": 400,
+      "injected": false
+    }
+  },
+  "split_sha256": "3322f956166b43771bc11c916d6ff1354b8cc418a01804e41681851290e04d56",
+  "split_sizes": {
+    "train": 2521,
+    "val": 1681,
+    "test": 4203
+  },
+  "split_anomalies": {
+    "train": 104,
+    "val": 69,
+    "test": 174
+  },
+  "edge_index_sha256": "bc0a94d2e24995dfb2aba9caf0cce5ddc36c614f21e4106eeb28b28ed456aa07",
+  "features_sha256": "ea596cb6982c8cfcbab8a420fecf571dd258e22d4022007a2121a4b948afaa45",
+  "labels_sha256": "b85786133cf85032549d3c3ece98ffabd2a91f5c1823eebbc01ca9170dcb062e",
+  "influence_target_cache": "targets_weibo_e53b4f247a77c780.npz",
+  "transductive_note": "encoder sees all nodes' features and all edges; no val/test labels"
+}

@@ -1,0 +1,50 @@
+# Benchmark configuration (CPU-first).  Every value here is recorded in each run's config.json.
+seeds: [0, 1, 2]
+threads: 4
+model:
+  hidden: 64          # latent width; heads x (hidden/heads); GATv2 uses the same widths
+  layers: 2
+  share_weights: false
+train:
+  lr: 0.005
+  weight_decay: 0.0005
+  alpha: 0.5          # TRAINING weight attr-vs-structure (losses are normalised to O(1)); scoring alpha is chosen on validation
+  neg_ratio: 1.0
+  max_pos: 200000
+influence_eval:
+  set_ks: [10, 20]
+  set_reps: 500
+explain:
+  enabled: true
+  m: 3
+  n_targets: 20
+  n_random: 3
+datasets:
+  cora_injected:
+    normalise: none
+    epochs: 150
+    edge_keep: 1.0
+    split: [0.3, 0.2, 0.5]
+    p_grid: [0.05, 0.10, 0.15]
+    reps: {train: 300, val: 300, test: 1000}
+    betweenness_pivots: null     # exact
+    data_args: {struct_cliques: 7, clique_size: 10, n_contextual: 70, k_candidates: 50}
+  weibo:
+    normalise: standard          # no clipping: extreme feature values carry label signal (see docs/protocol.md)
+    epochs: 60
+    edge_keep: 0.3               # DropEdge-style arc subsampling during training only (CPU budget)
+    split: [0.3, 0.2, 0.5]
+    p_grid: [0.002, 0.003, 0.005]
+    reps: {train: 100, val: 100, test: 500}
+    betweenness_pivots: 200      # sampled-pivot approximation (Brandes & Pich 2007)
+  reddit:                         # OPTIONAL: not part of the default benchmark; run with --datasets reddit
+    optional: true
+    normalise: standard
+    epochs: 100
+    edge_keep: 1.0
+    split: [0.3, 0.2, 0.5]
+    p_grid: [0.005, 0.01, 0.015]  # below the measured supercritical jump (p=0.02)
+    reps: {train: 200, val: 200, test: 500}
+    betweenness_pivots: 200
+variants: [gcn_anom, gat_anom, gatv2_anom, gat_inf, gcn_joint, gat_joint, gatv2_joint, gat1h_joint, gat_untrained]
+baselines: [iforest_attr, iforest_attr_struct, centrality]

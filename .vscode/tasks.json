@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run dashboard (localhost only)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe -m streamlit run app\\streamlit_app.py --server.address localhost --server.port 8501",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Run tests",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe -m pytest",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Smoke test",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe -m attngnn.cli smoke",
+      "problemMatcher": []
+    },
+    {
+      "label": "Rebuild report and slides",
+      "type": "shell",
+      "command": "powershell -ExecutionPolicy Bypass -File scripts\\build_docs.ps1",
+      "problemMatcher": []
+    }
+  ]
+}

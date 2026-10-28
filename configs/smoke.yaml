@@ -1,0 +1,7 @@
+# Overrides applied by --smoke: tiny budgets to prove the pipeline works. NOT reportable results.
+seeds: [0]
+explain: {enabled: true, m: 2, n_targets: 3, n_random: 1}
+influence_eval: {set_ks: [5], set_reps: 50}
+dataset_overrides:
+  epochs: 4
+  reps: {train: 10, val: 10, test: 20}

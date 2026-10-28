@@ -1,0 +1,16 @@
+dataset,check family,result,evidence
+cora,"Integrity against pinned upstream (SHA-256, fresh download)",1/1 pass,8 files
+cora,Structural validity,1/1 pass,"2708 nodes, 1433 features, 10556 directed arcs (= 5278 undirected; the GCN/GAT papers list 5,429 raw citation records), 7 classes"
+cora,Injection integrity,5/5 pass,"cliques complete=True, disjoint/counts=True (70 struct, 70 ctx), contextual copied=True, normal attributes untouched=True, same seed reproduces=True; rate 5.17%"
+cora (injected),Structural validity,4/4 pass,2708 x 1433
+cora (injected),Split integrity,3/3 pass,812(42)/542(28)/1354(70) nodes (anomalies) train/val/test
+reddit,"Integrity against pinned upstream (SHA-256, fresh download)",2/2 pass,"local 276432d36219349b..., pinned 276432d36219349b..."
+reddit,Structural validity,4/4 pass,10984 x 64
+reddit,Equals published statistics,4/4 pass,10984 vs 10984
+reddit,Label semantics,1/1 pass,0.000 vs 0.000
+reddit,Split integrity,3/3 pass,3295(110)/2197(73)/5492(183) nodes (anomalies) train/val/test
+weibo,"Integrity against pinned upstream (SHA-256, fresh download)","3/3 pass, 2 finding(s)",pinned (2022): 868 anomalies; upstream main (2024): 347; main anomalies are a subset: True
+weibo,Structural validity,4/4 pass,8405 x 400
+weibo,Equals published statistics,4/4 pass,8405 vs 8405
+weibo,Label semantics,"0/1 pass, 1 partial","clustering direction agrees: True; neighbour-similarity direction agrees: False. Our similarity is the mean cosine between a node and its neighbours on the raw features; BOND does not give its exact definition,"
+weibo,Split integrity,3/3 pass,2521(260)/1681(174)/4203(434) nodes (anomalies) train/val/test

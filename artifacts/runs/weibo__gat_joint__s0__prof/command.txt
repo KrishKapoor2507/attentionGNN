@@ -1,0 +1,1 @@
+python -m attngnn.cli run --dataset weibo --variant gat_joint --seed 0 --tag prof

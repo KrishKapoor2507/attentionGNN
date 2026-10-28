@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"          # every Monday: re-check that the upstream datasets are unchanged
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    name: Tests (Python 3.11, CPU)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements*.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+          pip install -e .
+      - name: Download the pinned datasets (SHA-256 verified)
+        run: python scripts/download_data.py
+      - name: Compile all sources
+        run: python -m compileall -q src app scripts tests
+      - name: Run the test suite
+        run: python -m pytest -q
+
+  dataset-validation:
+    name: Dataset authenticity check
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements*.txt
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+      - run: python scripts/download_data.py
+      - name: Validate datasets against the pinned upstream commit
+        run: python scripts/validate_datasets.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dataset-validation
+          path: docs/dataset_validation.md

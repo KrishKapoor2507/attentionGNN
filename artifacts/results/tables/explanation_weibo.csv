@@ -1,0 +1,3 @@
+output,seeds,targets (pooled),mean effect: remove high-attention,mean effect: remove random,mean effect: remove low-attention,high - random (95% bootstrap CI over targets),high - low (95% CI),share of targets high > random,Wilcoxon p (high > random),per-seed mean(high - random)
+anomaly,3,60,+0.0650,-0.0016,-0.0177,"+0.0667 [+0.0167, +0.1434]","+0.0828 [+0.0295, +0.1658]",0.68,0.00309,"s0: +0.0336, s1: +0.1536, s2: +0.0128"
+influence,3,60,+0.3317,+0.0339,+0.0004,"+0.2977 [+0.1757, +0.4303]","+0.3312 [+0.1974, +0.4767]",0.63,0.00012,"s0: +0.6711, s1: +0.2185, s2: +0.0036"

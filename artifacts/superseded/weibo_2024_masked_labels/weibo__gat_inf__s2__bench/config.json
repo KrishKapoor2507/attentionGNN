@@ -1,0 +1,56 @@
+{
+  "run_id": "weibo__gat_inf__s2__bench",
+  "tag": "bench",
+  "dataset": "weibo",
+  "variant": "gat_inf",
+  "seed": 2,
+  "config": {
+    "dataset": {
+      "normalise": "standard",
+      "epochs": 60,
+      "edge_keep": 0.3,
+      "split": [
+        0.3,
+        0.2,
+        0.5
+      ],
+      "p_grid": [
+        0.002,
+        0.003,
+        0.005
+      ],
+      "reps": {
+        "train": 100,
+        "val": 100,
+        "test": 500
+      },
+      "betweenness_pivots": 200
+    },
+    "model": {
+      "hidden": 64,
+      "layers": 2,
+      "share_weights": false
+    },
+    "variant": {
+      "encoder": "gat",
+      "heads": 4,
+      "w_rec": 0.0,
+      "lam_inf": 1.0
+    },
+    "inference": {
+      "set_ks": [
+        10,
+        20
+      ],
+      "set_reps": 500
+    }
+  },
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "started": "2026-10-26T00:24:56+0530"
+}

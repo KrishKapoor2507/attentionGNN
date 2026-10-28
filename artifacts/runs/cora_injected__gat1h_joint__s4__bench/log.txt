@@ -1,0 +1,14 @@
+[22:42:35] run cora_injected__gat1h_joint__s4__bench
+[22:42:35] influence targets loaded from cache targets_cora_injected_e994aac2429f5b02.npz
+[22:42:37] model gat1h_joint: encoder params=96192 total=195804
+[22:42:37] epoch    1/150  loss=2.0870 attr=1.5002 struct=0.6564 inf=1.0087
+[22:42:40] epoch   21/150  loss=1.0578 attr=0.9693 struct=0.5780 inf=0.2842
+[22:42:43] epoch   41/150  loss=0.8452 attr=0.9182 struct=0.4751 inf=0.1485
+[22:42:46] epoch   61/150  loss=0.7982 attr=0.9013 struct=0.4545 inf=0.1203
+[22:42:49] epoch   81/150  loss=0.7260 attr=0.8931 struct=0.4442 inf=0.0574
+[22:42:51] epoch  101/150  loss=0.6984 attr=0.8885 struct=0.4413 inf=0.0335
+[22:42:54] epoch  121/150  loss=0.6786 attr=0.8852 struct=0.4317 inf=0.0201
+[22:42:57] epoch  141/150  loss=0.6781 attr=0.8826 struct=0.4313 inf=0.0212
+[22:42:58] epoch  150/150  loss=0.6785 attr=0.8815 struct=0.4324 inf=0.0215
+[22:43:04] run complete
+[22:43:04] total wall time 28.6s

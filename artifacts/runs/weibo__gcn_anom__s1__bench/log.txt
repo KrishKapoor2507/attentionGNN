@@ -1,0 +1,9 @@
+[12:31:25] run weibo__gcn_anom__s1__bench
+[12:31:26] influence targets loaded from cache targets_weibo_d89db4eea4d69bdc.npz
+[12:31:28] model gcn_anom: encoder params=29824 total=62163
+[12:31:28] epoch    1/60  loss=0.8014 attr=1.0037 struct=0.5991 inf=1.0337
+[12:31:41] epoch   21/60  loss=0.7342 attr=0.9989 struct=0.4695 inf=1.0002
+[12:31:53] epoch   41/60  loss=0.7306 attr=0.9989 struct=0.4624 inf=1.0003
+[12:32:05] epoch   60/60  loss=0.7287 attr=0.9990 struct=0.4584 inf=1.0000
+[12:32:11] run complete
+[12:32:11] total wall time 45.5s

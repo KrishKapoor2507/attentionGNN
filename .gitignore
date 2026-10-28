@@ -1,0 +1,26 @@
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.claude/
+
+# downloaded datasets (re-created by scripts/download_data.py, SHA-256 pinned)
+data/raw/
+
+# regenerated or local-only artefacts
+artifacts/render/
+artifacts/cache/
+artifacts/eq/
+artifacts/exports/
+artifacts/jobs/
+artifacts/smoke/
+artifacts/*.log
+artifacts/*.txt
+# superseded (corrupted-label) runs: keep the small JSON evidence, drop the heavy files
+artifacts/superseded/**/checkpoint.pt
+artifacts/superseded/**/predictions.csv.gz
+
+# office lock files
+~$*

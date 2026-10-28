@@ -1,0 +1,3 @@
+[22:28:50] run cora_injected__iforest_attr_struct__s2__bench
+[22:28:50] influence targets loaded from cache targets_cora_injected_a74d4f56d798a793.npz
+[22:28:53] total wall time 3.0s

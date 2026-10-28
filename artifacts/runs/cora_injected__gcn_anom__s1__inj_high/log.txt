@@ -1,0 +1,14 @@
+[00:42:39] run cora_injected__gcn_anom__s1__inj_high
+[00:42:39] influence targets loaded from cache targets_cora_injected_c39875740d30815d.npz
+[00:42:41] model gcn_anom: encoder params=95936 total=195420
+[00:42:41] epoch    1/150  loss=1.0844 attr=1.5160 struct=0.6528 inf=1.0159
+[00:42:43] epoch   21/150  loss=0.7498 attr=0.9538 struct=0.5457 inf=1.0014
+[00:42:45] epoch   41/150  loss=0.6833 attr=0.9147 struct=0.4518 inf=1.0001
+[00:42:47] epoch   61/150  loss=0.6679 attr=0.8999 struct=0.4358 inf=1.0001
+[00:42:49] epoch   81/150  loss=0.6604 attr=0.8921 struct=0.4287 inf=1.0000
+[00:42:50] epoch  101/150  loss=0.6553 attr=0.8872 struct=0.4234 inf=1.0000
+[00:42:52] epoch  121/150  loss=0.6513 attr=0.8837 struct=0.4188 inf=1.0000
+[00:42:54] epoch  141/150  loss=0.6501 attr=0.8812 struct=0.4190 inf=1.0000
+[00:42:55] epoch  150/150  loss=0.6486 attr=0.8802 struct=0.4169 inf=1.0000
+[00:42:56] run complete
+[00:42:56] total wall time 16.8s

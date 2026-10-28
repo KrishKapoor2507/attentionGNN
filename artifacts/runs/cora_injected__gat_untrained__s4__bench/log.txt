@@ -1,0 +1,5 @@
+[22:43:04] run cora_injected__gat_untrained__s4__bench
+[22:43:04] influence targets loaded from cache targets_cora_injected_e994aac2429f5b02.npz
+[22:43:06] model gat_untrained: encoder params=96192 total=195804
+[22:43:10] run complete
+[22:43:10] total wall time 6.5s

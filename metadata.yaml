@@ -1,0 +1,25 @@
+# Single source of truth for report + slides + README metadata.
+# Edit the EDIT_ME placeholders, then re-run the document build (see README).
+title: "Attention-Driven Graph Neural Networks for Influence and Anomaly Detection in Complex Networks"
+short_title: "Attention-Driven GNN: Influence and Anomaly Detection"
+course: "CSI1006 (Fifth Semester) - Project Review"
+institution: "School of Computer Science and Engineering (SCOPE), VIT Vellore"
+authors:
+  - name: "Krish Kapoor"
+    reg_no: "23MIC0023"
+    email: "krish.kapoor2023@vitstudent.ac.in"
+  - name: "A.M. Karthikeshwaran"
+    reg_no: "23MID0215"
+    email: "karthikeshwaran.am2023@vitstudent.ac.in"
+guide: "EDIT_ME_guide_name (not provided in the proposal; left blank on purpose)"
+keywords:
+  - graph attention network
+  - influence ranking
+  - anomaly detection
+  - attributed networks
+  - independent cascade
+  - interpretability
+  - centrality
+ai_assistance_disclosure: >
+  EDIT_ME: This project was implemented with the help of an AI coding assistant (Claude Code).
+  Check your institution's rules on AI assistance and edit this statement accordingly.

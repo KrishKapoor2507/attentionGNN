@@ -1,0 +1,4 @@
+[00:19:33] run weibo__centrality__s2__bench
+[00:19:36] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:19:40] computing betweenness (200 sampled pivots)
+[00:20:53] total wall time 79.2s

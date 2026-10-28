@@ -1,0 +1,1 @@
+python -m attngnn.cli sensitivity --seeds 0 1 2

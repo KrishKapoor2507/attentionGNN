@@ -1,0 +1,3 @@
+[00:19:25] run weibo__iforest_attr_struct__s2__bench
+[00:19:27] influence targets loaded from cache targets_weibo_d5bb846b95aae2ec.npz
+[00:19:33] total wall time 8.5s
